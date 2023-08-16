@@ -11,18 +11,22 @@
   
 ### MODULE 2
 *2-1 Journal: What Makes a Productive Code Review?*
+
 *2-2 Milestone One: Code Review*
 
 ### MODULE 3
 *3-1 Journal: Marketing With ePortfolios & Artifact Update*
+
 *3-2 Milestone Two: Enhancement One: Software Design & Engineering*
   
 ### MODULE 4
 *4-1 Journal: Career Choice & Artifact Update*
+
 *4-2 Milestone Three: Enhancement Two: Algorithms & Data Structure*
 
 ### MODULE 5
 *5-1 Journal: Computer Science Trends & Artifact Update*
+
 *5-2 Milestone Four: Enhancement Three: Databases*
   
 ### MODULE 6
