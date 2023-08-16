@@ -4,7 +4,9 @@
 *1-1 Journal: Self-Introduction*
 
 *1-2 ePortfolio*
+
 *1-4 ePortfolio Selection & Refinement Plan*
+
 *1-5 Optional Discussion: Your Course Community*
   
 ### MODULE 2
