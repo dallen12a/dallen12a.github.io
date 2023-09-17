@@ -10,6 +10,14 @@ body {
   min-height: 100vh;
 }
 
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Make it a circle */
+  margin-bottom: 20px;
+  object-fit: cover; /* Ensure the image covers the entire circle */
+}
+
 .navbar {
   display: flex;
   justify-content: center;
