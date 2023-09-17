@@ -4,11 +4,15 @@ body {
   padding: 20px;
   background-color: #f0f0f0; /* Set default background color */
   color: #333; /* Set default text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #333; /* Change navbar background color */
   padding: 10px 0;
 }
@@ -24,7 +28,43 @@ body {
 }
 
 .content {
-  padding: 20px 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.typing-text {
+  overflow: hidden;
+  border-right: .15em solid orange; /* Adjust typing cursor color */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
 .card {
@@ -36,6 +76,7 @@ body {
   text-decoration: none;
   color: #333;
   background-color: #fff; /* Set card background color */
+  transition: background-color 0.3s;
 }
 
 .card:hover {
