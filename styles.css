@@ -1,103 +1,126 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  padding: 20px;
-  background-color: #f0f0f0; /* Set default background color */
-  color: #333; /* Set default text color */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
+  padding: 0;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: #333; /* Change navbar background color */
-  padding: 10px 0;
+  background-color: #333;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #f0f0f0; /* Change navbar link color */
-  padding: 5px 15px;
-}
-
-.navbar button {
-  background-color: #555;
-  color: #f0f0f0;
-  border: none;
-  padding: 5px 15px;
-  margin-left: auto;
-  cursor: pointer;
-}
-
-.navbar button:hover {
-  background-color: #777;
+  color: white;
+  margin: 0 20px;
 }
 
 .navbar a:hover {
-  background-color: #555; /* Change navbar link hover color */
+  text-decoration: underline;
+}
+
+.navbar #return-to-top {
+  margin-left: auto;
 }
 
 .content {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  display: none; /* Hide content initially */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  text-align: center;
 }
 
-.card {
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: #333;
-  background-color: #fff; /* Set card background color */
-  transition: background-color 0.3s;
-}
-
-.card:hover {
-  background-color: #f9f9f9;
+.text-content {
+  text-align: left;
 }
 
 .profile-picture {
+  border-radius: 50%;
   width: 150px;
   height: 150px;
-  border-radius: 50%; /* Make it a circle */
-  margin-bottom: 20px;
-  object-fit: cover; /* Ensure the image covers the entire circle */
+  margin-right: 20px;
 }
 
 #typing-text {
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation: typing 3.5s steps(40, end) forwards, blink-caret .75s step-end infinite;
-  animation-delay: 0.5s; /* Delay the typing animation for half a second */
+  border-right: 2px solid black;
+  padding-right: 8px;
+  animation: typing 2s steps(20) infinite;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from, to { width: 0 }
+  50% { width: 100% }
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+.skills-container, .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Dark mode styles */
+.card {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  margin: 0;
+}
+
+/* Styles for different skill cards */
+.card-html {
+  background-color: #ffbc42;
+}
+
+.card-css {
+  background-color: #ff6b6b;
+}
+
+.card-java {
+  background-color: #4a90e2;
+}
+
+.card-python {
+  background-color: #49c39e;
+}
+
+.card-cpp {
+  background-color: #c882ff;
+}
+
+#dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for dark mode */
 body.dark-mode {
-  background-color: #121212; /* Dark mode background color */
-  color: #f0f0f0; /* Dark mode text color */
+  background-color: #121212;
+  color: #f0f0f0;
 }
 
 .navbar.dark-mode {
-  background-color: #555;
+  background-color: #333;
 }
 
 .card.dark-mode {
