@@ -1,24 +1,26 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 20px;
+  background-color: #f0f0f0; /* Set default background color */
+  color: #333; /* Set default text color */
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
-  background-color: #f0f0f0;
+  background-color: #333; /* Change navbar background color */
   padding: 10px 0;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #333;
+  color: #f0f0f0; /* Change navbar link color */
   padding: 5px 10px;
 }
 
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: #555; /* Change navbar link hover color */
 }
 
 .content {
@@ -33,8 +35,29 @@ body {
   margin-bottom: 10px;
   text-decoration: none;
   color: #333;
+  background-color: #fff; /* Set card background color */
 }
 
 .card:hover {
   background-color: #f9f9f9;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212; /* Dark mode background color */
+  color: #f0f0f0; /* Dark mode text color */
+}
+
+.navbar.dark-mode {
+  background-color: #555;
+}
+
+.card.dark-mode {
+  background-color: #212121;
+  border: 1px solid #444;
+  color: #f0f0f0;
+}
+
+.card.dark-mode:hover {
+  background-color: #333;
 }
