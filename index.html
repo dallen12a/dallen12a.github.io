@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dave's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,47 +15,48 @@
     <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
   </div>
 
-  <div class="content">
-    <div class="centered">
-      <img src="https://media.licdn.com/dms/image/C4E03AQF7dPj5FvBaqA/profile-displayphoto-shrink_200_200/0/1631761322062?e=1700697600&v=beta&t=RLbZ7lDBgcYyiKtWhnowrQvgAUHINiOMm6zuDBNQP4M" alt="Profile Picture" class="profile-picture">
-      <h1 id="typing-text">Hi, I am Dave!</h1>
+  <div class="content" id="about">
+    <h2>About Me</h2>
+    <p>Write something about yourself here.</p>
+  </div>
+
+  <div class="content" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <h3>HTML</h3>
+        <p>Description of HTML skill.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>CSS</h3>
+        <p>Description of CSS skill.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>TypeScript</h3>
+        <p>Description of TypeScript skill.</p>
+      </div>
+
+      <!-- Add more skills as needed -->
+    </div>
+  </div>
+
+  <div class="content" id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>Description of Project 1.</p>
     </div>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Write something about yourself here.</p>
-    </section>
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>Description of Project 2.</p>
+    </div>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>TypeScript</li>
-        <!-- Add more skills as needed -->
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <a href="project1.html" class="card">
-        <h3>Category 1</h3>
-        <p>Description of Project 1.</p>
-      </a>
-
-      <a href="project2.html" class="card">
-        <h3>Category 2</h3>
-        <p>Description of Project 2.</p>
-      </a>
-
-      <a href="project3.html" class="card">
-        <h3>Category 3</h3>
-        <p>Description of Project 3.</p>
-      </a>
-
-      <!-- Add more projects as needed -->
-    </section>
+    <!-- Add more project cards as needed -->
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
