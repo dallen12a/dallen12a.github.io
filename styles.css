@@ -54,15 +54,14 @@ body {
   margin-bottom: 20px;
 }
 
-.typing-text {
+#typing-text {
   overflow: hidden;
   border-right: .15em solid orange; /* Adjust typing cursor color */
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em;
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  animation-delay: 0.5s; /* Delay the typing animation for half a second */
 }
 
 @keyframes typing {
