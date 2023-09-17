@@ -2,7 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #f0f0f0;
+}
+
+.dark-mode {
+  background-color: #1f1f1f;
+  color: #ffffff;
 }
 
 .header-content {
@@ -41,9 +45,8 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.section-content {
+.section {
   padding: 20px;
-  background-color: white;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -53,38 +56,9 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-.project-card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  width: 300px;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.project-info h3 {
-  font-size: 20px;
-  margin: 0 0 10px 0;
-}
-
-.project-info p {
+.section-content p {
   font-size: 16px;
-  margin: 0 0 10px 0;
-}
-
-.project-info a {
-  text-decoration: none;
-  color: #3498db;
-}
-
-.project-info a:hover {
-  text-decoration: underline;
+  line-height: 1.6;
 }
 
 .skills ul {
@@ -101,39 +75,12 @@ nav a:hover {
   color: #3498db;
 }
 
-.contact {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.contact h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.contact p {
-  font-size: 16px;
-  margin: 0;
-}
-
-.contact a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  text-decoration: underline;
-}
-
 .credentials {
   margin-top: 20px;
 }
 
 .credentials img {
-  height: 30px; /* Adjust the height as needed */
+  height: 10px; /* Adjust the height as needed */
   vertical-align: middle;
   margin-right: 10px;
 }
