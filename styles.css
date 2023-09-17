@@ -2,7 +2,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #f5f5f5;
 }
 
 .header-content {
@@ -22,10 +21,35 @@ body {
   font-size: 18px;
 }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.section-content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .project-card {
@@ -35,6 +59,7 @@ body {
   width: 300px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .project-card img {
@@ -42,12 +67,8 @@ body {
   border-radius: 10px;
 }
 
-.project-info {
-  margin-top: 10px;
-}
-
 .project-info h3 {
-  font-size: 24px;
+  font-size: 20px;
   margin: 0 0 10px 0;
 }
 
@@ -65,30 +86,18 @@ body {
   text-decoration: underline;
 }
 
-.contact {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.skills ul {
+  list-style: none;
+  padding: 0;
 }
 
-.contact h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.skills li {
+  margin-bottom: 5px;
 }
 
-.contact p {
-  font-size: 16px;
-  margin: 0;
-}
-
-.contact a {
+.skills li::before {
+  content: '• ';
   color: #3498db;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  text-decoration: underline;
 }
 
 footer {
