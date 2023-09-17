@@ -60,6 +60,33 @@ body {
   background-color: #f9f9f9;
 }
 
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Make it a circle */
+  margin-bottom: 20px;
+  object-fit: cover; /* Ensure the image covers the entire circle */
+}
+
+#typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 3.5s steps(40, end) forwards, blink-caret .75s step-end infinite;
+  animation-delay: 0.5s; /* Delay the typing animation for half a second */
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
 /* Dark mode styles */
 body.dark-mode {
   background-color: #121212; /* Dark mode background color */
