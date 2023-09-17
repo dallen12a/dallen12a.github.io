@@ -12,3 +12,17 @@ function toggleSection(sectionId) {
 function toggleDarkMode() {
   document.body.classList.toggle('dark-mode');
 }
+
+const typingText = "Hi, I am Dave!";
+let charIndex = 0;
+
+function type() {
+  const span = document.getElementById('typing-text');
+  if (charIndex < typingText.length) {
+    span.textContent += typingText.charAt(charIndex);
+    charIndex++;
+    setTimeout(type, 100); // Adjust typing speed (milliseconds)
+  }
+}
+
+document.addEventListener('DOMContentLoaded', type);
