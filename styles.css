@@ -54,20 +54,27 @@ p {
     font-size: 28px;
   }
 }
+
+/* Animations and Transitions */
 .skill-card {
   display: inline-block;
   padding: 10px 20px;
   margin: 5px;
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 20px;
   background-color: #3498db;
   color: #fff;
-}
-/* Animations and Transitions */
-.skill-card, .project-card, nav a {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.skill-card:hover, .project-card:hover, nav a:hover {
+.skill-card:hover {
+  background-color: #2980b9;
+}
+
+.project-card, nav a {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-card:hover, nav a:hover {
   background-color: #2980b9;
   color: #fff;
 }
@@ -96,20 +103,7 @@ nav a {
 }
 
 /* Dark mode styles (adjust as needed) */
-.dark-mode {
+.dark-mode body {
   background-color: #333;
   color: #f9f9f9;
-}
-
-/* Additional styles for the new sections */
-.contact {
-  margin-top: 40px;
-}
-
-.contact p {
-  margin: 10px 0;
-}
-
-.contact a {
-  color: #3498db;
 }
