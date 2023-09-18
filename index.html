@@ -3,70 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dave's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <title>Dave's Professional Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <button onclick="toggleDarkMode()" id="dark-mode-toggle">Toggle Dark Mode</button>
-  <nav class="navbar">
-    <a href="#" onclick="toggleSection('about')">About Me</a>
-    <a href="#" onclick="toggleSection('skills')">Skills</a>
-    <a href="#" onclick="toggleSection('projects')">Projects</a>
-    <a href="#" id="return-to-top">Return to Top</a>
-  </nav>
+  <header class="header">
+    <div class="header-container">
+      <h1>Dave's Professional Portfolio</h1>
+      <nav class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <section class="content" id="about">
-    <img src="profile_picture.jpg" alt="Profile Picture" class="profile-picture">
-    <div class="text-content">
-      <h1><span id="typing-text"></span></h1>
-      <p>Welcome to my portfolio. I am in my final term of my Bachelor of Science program at Southern New Hampshire University. This page showcases my work for the capstone course CS499.</p>
-      <div class="learn-more">
-        <span onclick="toggleDropdown()">Want to know more?</span>
-        <div class="dropdown-content" id="dropdownContent">
-          <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a>
-          <a href="https://github.com/yourgithubprofile" target="_blank">GitHub</a>
-        </div>
-      </div>
+  <section id="about" class="section">
+    <div class="section-content">
+      <h2>About Me</h2>
+      <p>Welcome to my professional portfolio. I am a passionate individual dedicated to continuous learning and growth in the field of technology.</p>
     </div>
   </section>
 
-  <section class="content" id="skills">
-    <h1>Skills</h1>
-    <div class="skills-container">
-      <div class="card card-html">
-        <h3>HTML</h3>
-      </div>
-      <div class="card card-css">
-        <h3>CSS</h3>
-      </div>
-      <div class="card card-java">
-        <h3>Java</h3>
-      </div>
-      <div class="card card-python">
-        <h3>Python</h3>
-      </div>
-      <div class="card card-cpp">
-        <h3>C++</h3>
-      </div>
+  <section id="skills" class="section">
+    <div class="section-content">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+      </ul>
     </div>
   </section>
 
-  <section class="content" id="projects">
-    <h1>Projects</h1>
-    <div class="projects-container">
-      <div class="card">
-        <h3>Software Engineering and Design</h3>
-      </div>
-      <div class="card">
-        <h3>Algorithms and Data Structures</h3>
-      </div>
-      <div class="card">
-        <h3>Databases</h3>
-      </div>
+  <section id="projects" class="section">
+    <div class="section-content">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li>Software Engineering and Design</li>
+        <li>Algorithms and Data Structures</li>
+        <li>Databases</li>
+      </ul>
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <section id="contact" class="section">
+    <div class="section-content">
+      <h2>Contact</h2>
+      <p>Feel free to reach out to me via email at dave@example.com or connect with me on LinkedIn: <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn Profile</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2023 Dave's Professional Portfolio</p>
+  </footer>
+
 </body>
 </html>
