@@ -18,6 +18,9 @@ function toggleDarkMode() {
   // Toggle the text on the button for dark and light mode
   const toggleButton = document.getElementById('toggle-button');
   toggleButton.innerText = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+
+  // Save the user's preference for future visits
+  localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
 }
 
 // Smooth scrolling
@@ -42,6 +45,12 @@ navLinks.forEach(link => {
     scrollToSection(targetSectionId);
   });
 });
+
+// Check the user's preference for dark mode
+const darkModePref = localStorage.getItem('dark-mode');
+if (darkModePref === 'true') {
+  toggleDarkMode(); // Enable dark mode if the preference is set to true
+}
 
 // Start typing effect
 type();
