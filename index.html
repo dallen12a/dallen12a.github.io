@@ -8,30 +8,30 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<button onclick="toggleDarkMode()" id="dark-mode-toggle">🌗</button>
-  <div class="navbar">
+  <button onclick="toggleDarkMode()" id="dark-mode-toggle">Toggle Dark Mode</button>
+  <nav class="navbar">
     <a href="#" onclick="toggleSection('about')">About Me</a>
     <a href="#" onclick="toggleSection('skills')">Skills</a>
     <a href="#" onclick="toggleSection('projects')">Projects</a>
     <a href="#" id="return-to-top">Return to Top</a>
-  </div>
+  </nav>
 
-    <div class="content" id="about">
+  <section class="content" id="about">
     <img src="profile_picture.jpg" alt="Profile Picture" class="profile-picture">
     <div class="text-content">
       <h1><span id="typing-text"></span></h1>
-      <p>Welcome to my portfolio. I am currently in my last term of my Bachelor of Science program at Southern New Hampshire University. This page contains my coursework for my capstone course CS499.</p>
+      <p>Welcome to my portfolio. I am in my final term of my Bachelor of Science program at Southern New Hampshire University. This page showcases my work for the capstone course CS499.</p>
       <div class="learn-more">
-        <span onclick="toggleDropdown()">Learn more</span>
+        <span onclick="toggleDropdown()">Want to know more?</span>
         <div class="dropdown-content" id="dropdownContent">
           <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a>
           <a href="https://github.com/yourgithubprofile" target="_blank">GitHub</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="content" id="skills">
+  <section class="content" id="skills">
     <h1>Skills</h1>
     <div class="skills-container">
       <div class="card card-html">
@@ -50,22 +50,22 @@
         <h3>C++</h3>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="content" id="projects">
+  <section class="content" id="projects">
     <h1>Projects</h1>
     <div class="projects-container">
       <div class="card">
         <h3>Software Engineering and Design</h3>
       </div>
       <div class="card">
-        <h3>Algorithms and Data Structure</h3>
+        <h3>Algorithms and Data Structures</h3>
       </div>
       <div class="card">
         <h3>Databases</h3>
       </div>
     </div>
-  </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
