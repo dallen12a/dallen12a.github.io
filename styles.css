@@ -54,7 +54,14 @@ p {
     font-size: 28px;
   }
 }
-
+.skill-card {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px; /* Rounded corners */
+  background-color: #3498db;
+  color: #fff;
+}
 /* Animations and Transitions */
 .skill-card, .project-card, nav a {
   transition: background-color 0.3s, color 0.3s;
