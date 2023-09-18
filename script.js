@@ -1,8 +1,23 @@
+let index = 0;
+const typingText = "Hi, I'm Dave!";
+
+function type() {
+  const typingDiv = document.getElementById('typing-text');
+  if (index < typingText.length) {
+    typingDiv.innerHTML += typingText.charAt(index);
+    index++;
+    setTimeout(type, 100);
+  }
+}
+
 // Toggle between light and dark mode
 function toggleDarkMode() {
   const body = document.body;
   body.classList.toggle('dark-mode');
-  console.log('Dark mode toggled');  // Add this line for debugging
+  
+  // Toggle the text on the button for dark and light mode
+  const toggleButton = document.getElementById('toggle-button');
+  toggleButton.innerText = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
 }
 
 // Smooth scrolling
@@ -27,3 +42,6 @@ navLinks.forEach(link => {
     scrollToSection(targetSectionId);
   });
 });
+
+// Start typing effect
+type();
