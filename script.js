@@ -12,6 +12,7 @@ function type() {
 
 // Toggle between light and dark mode
 function toggleDarkMode() {
+  console.log('Toggle button clicked');
   const body = document.body;
   body.classList.toggle('dark-mode');
   
