@@ -2,6 +2,7 @@
 function toggleDarkMode() {
   const body = document.body;
   body.classList.toggle('dark-mode');
+  console.log('Dark mode toggled');  // Add this line for debugging
 }
 
 // Smooth scrolling
