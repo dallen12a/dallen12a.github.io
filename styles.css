@@ -38,10 +38,28 @@ body {
   color: #ddd; /* Adjust the color for the name */
 }
 
+.profile .contact-info a {
+  color: #3498db; /* Blue in light mode */
+  text-decoration: none;
+}
+
+.dark-theme .profile .contact-info a {
+  color: #4CAF50; /* Green in dark mode */
+}
+
+.profile .contact-info a:hover {
+  text-decoration: underline;
+}
+
 .profile-picture {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  border: 3px solid #3498db; /* Blue border in light mode */
+}
+
+.dark-theme .profile-picture {
+  border: 3px solid #4CAF50; /* Green border in dark mode */
 }
 
 .profile-info {
@@ -95,7 +113,7 @@ body {
   text-decoration: none;
 }
 
-.project-link.dark-theme {
+.dark-theme .project-link {
   color: #4CAF50; /* Green in dark mode */
 }
 
