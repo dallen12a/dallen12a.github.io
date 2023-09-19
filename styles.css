@@ -6,12 +6,15 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.profile {
-  display: flex;
-  flex-direction: column;
+.card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
 }
 
 .profile-picture {
@@ -20,7 +23,7 @@ body {
   height: 100px;
 }
 
-.profile-info {
+.card-content {
   margin-top: 20px;
 }
 
@@ -53,35 +56,41 @@ body {
   margin-bottom: 10px;
 }
 
-.programming-skills {
-  margin-top: 20px;
+.programming-skills ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.programming-skills .header {
-  font-weight: bold;
-  margin-bottom: 10px;
+.programming-skills li {
+  margin-bottom: 5px;
+}
+
+.skill {
+  background-color: #3498db;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 5px;
 }
 
 .projects {
-  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project {
   border: 2px solid #ccc;
   border-radius: 10px;
-  margin-top: 20px;
-  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project img {
-  max-width: 50%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
-.project .title {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.project .description {
-  margin-top: 5px;
+.project:hover {
+  transform: scale(1.05);
 }
