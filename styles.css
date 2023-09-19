@@ -79,22 +79,19 @@ body {
 .skill {
   background-color: #3498db;
   color: #fff;
-  padding: 3px 10px;
+  padding: 3px 15px;
   border-radius: 20px;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .project {
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  margin: 10px;
-  width: 250px;
-  transition: transform 0.3s ease-in-out;
+  width: 47%;
+  margin: 10px 0;
 }
 
 .project img {
@@ -113,8 +110,16 @@ body {
 
 .project .description {
   margin-top: 5px;
+  display: none;
 }
 
-.project:hover {
-  transform: scale(1.05);
+/* Add waving hand animation */
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  20%, 60% { transform: rotate(-30deg); }
+  40%, 80% { transform: rotate(30deg); }
+}
+
+.waving-hand {
+  animation: wave 2s infinite;
 }
