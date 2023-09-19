@@ -13,9 +13,8 @@ function type() {
 function toggleDarkMode() {
   const body = document.body;
   body.classList.toggle('dark-mode');
-  
+
   const toggleButton = document.getElementById('toggle-button');
-  toggleButton.addEventListener('click', toggleDarkMode);
   toggleButton.innerText = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
 
   localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
@@ -29,6 +28,11 @@ function scrollToSection(sectionId) {
   });
 }
 
+// Set up event listener for the toggle button
+const toggleButton = document.getElementById('toggle-button');
+toggleButton.addEventListener('click', toggleDarkMode);
+
+// Set up event listeners for navigation links
 const navLinks = document.querySelectorAll('nav a');
 navLinks.forEach(link => {
   link.addEventListener('click', (event) => {
@@ -38,6 +42,7 @@ navLinks.forEach(link => {
   });
 });
 
+// Check the user's preference for dark mode
 const darkModePref = localStorage.getItem('dark-mode');
 if (darkModePref === 'true') {
   toggleDarkMode();
