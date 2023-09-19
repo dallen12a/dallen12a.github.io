@@ -1,81 +1,87 @@
-/* Add these styles to styles.css */
-
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #1a1a1a;
-  color: #e0e0e0;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .container {
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-nav {
-  background-color: #333;
-  padding: 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav a {
-  color: #e0e0e0;
-  text-decoration: none;
-}
-
-.typing-container {
-  text-align: center;
-  padding: 20px;
-}
-
-.typing-animation {
-  display: inline-block;
-  border-right: 2px solid #29b6f6;
-  padding-right: 8px;
-  font-size: 36px;
-}
-
-.section-heading {
-  border-bottom: 2px solid #29b6f6;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  color: #29b6f6;
-}
-
-.skills, .projects {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.skill-card, .project-card {
-  flex: 1 1 200px;
-  margin: 10px;
-  padding: 20px;
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.profile-info {
+  margin-top: 20px;
+}
+
+.name {
+  font-size: 1.5em;
+}
+
+.position {
+  font-style: italic;
+}
+
+.location {
+  margin-top: 5px;
+}
+
+.contact {
+  margin-top: 10px;
+}
+
+.contact a {
+  margin-right: 10px;
+}
+
+.about {
+  margin-top: 20px;
+}
+
+.about .header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.programming-skills {
+  margin-top: 20px;
+}
+
+.programming-skills .header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.projects {
+  max-width: 600px;
+}
+
+.project {
+  border: 2px solid #ccc;
   border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s ease;
+  margin-top: 20px;
+  padding: 10px;
 }
 
-.skill-card {
-  background-color: #4CAF50;
+.project img {
+  max-width: 100%;
 }
 
-.project-card {
-  background-color: #3498db;
+.project .title {
+  font-weight: bold;
+  margin-top: 10px;
 }
 
-.skill-card:hover, .project-card:hover {
-  transform: translateY(-10px);
+.project .description {
+  margin-top: 5px;
 }
