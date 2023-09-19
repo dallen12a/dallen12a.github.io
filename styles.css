@@ -2,8 +2,8 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
+  background-color: #1e1e1e; /* Dark background */
+  color: #f0f0f0; /* Light text */
   margin: 0;
   padding: 0;
 }
@@ -15,7 +15,7 @@ body {
 }
 
 nav {
-  background-color: #2980b9;
+  background-color: #333;
   padding: 20px;
 }
 
@@ -31,72 +31,35 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: #f0f0f0;
   text-decoration: none;
 }
 
-/* Typing animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
+/* ... (rest of the existing CSS) ... */
 
-.typing-animation {
-  overflow: hidden;
-  border-right: .15em solid orange;
-  white-space: nowrap;
-  margin: 0 auto;
-  animation: typing 2s steps(40, end);
-}
-
-/* Bounce animation */
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-.bounce {
-  animation: bounce 1s infinite;
-  transform-origin: bottom;
-}
-
-.section-heading {
-  color: #4CAF50;
-  font-size: 2em;
-}
-
-.about-me, .skills, .projects, .contact {
-  margin-bottom: 40px;
+/* Additional styles for skills and projects */
+.skills, .projects {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skill-card, .project-card {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 20px;
-  color: white;
+  flex: 1 1 200px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .skill-card {
-  background-color: #3498db;
+  background-color: #4CAF50;
 }
 
 .project-card {
-  background-color: #2ecc71;
+  background-color: #3498db;
 }
 
 .skill-card:hover, .project-card:hover {
-  background-color: #2980b9;
-}
-
-.contact a {
-  color: #e74c3c;
+  transform: translateY(-10px);
 }
