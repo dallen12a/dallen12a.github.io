@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>GitHub Portfolio</title>
 </head>
@@ -12,17 +13,17 @@
       <img src="path_to_profile_image.jpg" alt="Profile Picture" class="profile-picture">
       <div class="card-content">
         <div class="name">Hi, I am Dave 👋</div>
-        <div class="position">Student at Southern New Hampshire University</div>
+        <div class="position">Software Engineering Student</div>
         <div class="location">Based in New York</div>
         <div class="contact">
-          <a href="mailto:your-email@example.com">Email</a>
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
-          <a href="https://github.com/your-github" target="_blank">GitHub</a>
+          <a href="mailto:dave@example.com">Email</a>
+          <a href="https://www.linkedin.com/in/dave" target="_blank">LinkedIn</a>
+          <a href="https://github.com/dave" target="_blank">GitHub</a>
         </div>
         <div class="about">
           <div class="header">About</div>
           <div class="content">
-            I am a current student at Southern New Hampshire University (SNHU), pursuing a Bachelor's degree in Software Engineering.
+            I am a passionate software engineering student in my final year, eager to learn and grow in the field of technology. I have experience working on various projects, showcasing my dedication and skills. My interests lie in software design, algorithms, and data structures. I am always open to new opportunities and collaborations.
           </div>
         </div>
         <div class="programming-skills">
@@ -44,25 +45,25 @@
     </div>
     <div class="projects">
       <div class="header">Projects</div>
-      <div class="project card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
-        <img src="path_to_project_image.jpg" alt="Project Image">
+      <div class="project card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)" onclick="toggleDescription(this)">
+        <img src="path_to_project1_image.jpg" alt="Project 1 Image">
         <div class="card-content">
-          <div class="title">Software Engineering/Design</div>
-          <div class="description">Small description of the project goes here. Small description of the project goes here.</div>
+          <div class="title">Project 1</div>
+          <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur varius diam, vitae cursus velit vestibulum in.</div>
         </div>
       </div>
-      <div class="project card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
-        <img src="path_to_project_image.jpg" alt="Project Image">
+      <div class="project card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)" onclick="toggleDescription(this)">
+        <img src="path_to_project2_image.jpg" alt="Project 2 Image">
         <div class="card-content">
-          <div class="title">Algorithms and Data Structures</div>
-          <div class="description">Small description of the project goes here. Small description of the project goes here.</div>
+          <div class="title">Project 2</div>
+          <div class="description">Sed auctor tellus ut lorem sollicitudin, a interdum ligula tincidunt. Curabitur maximus urna at mi finibus sollicitudin.</div>
         </div>
       </div>
-      <div class="project card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
-        <img src="path_to_project_image.jpg" alt="Project Image">
+      <div class="project card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)" onclick="toggleDescription(this)">
+        <img src="path_to_project3_image.jpg" alt="Project 3 Image">
         <div class="card-content">
-          <div class="title">Databases</div>
-          <div class="description">Small description of the project goes here. Small description of the project goes here.</div>
+          <div class="title">Project 3</div>
+          <div class="description">Fusce id purus vel tortor eleifend dapibus. Phasellus non ipsum eu lacus efficitur hendrerit nec ut nisi.</div>
         </div>
       </div>
       <!-- Add more projects as needed -->
