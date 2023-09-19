@@ -56,8 +56,8 @@ body {
   text-decoration: none;
 }
 
-.dark-theme .profile .contact-info a {
-  color: #4CAF50 !important;
+.dark-theme .contact-info a {
+  color: #4CAF50 ;
 }
 
 .profile .contact-info a:hover {
