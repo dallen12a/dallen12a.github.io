@@ -56,13 +56,12 @@ p {
 }
 
 /* Animations and Transitions */
-.skill-card, .project-card, nav a {
-  transition: background-color 0.3s, color 0.3s;
+.skill-card, .project-card {
+  transition: transform 0.3s ease;
 }
 
-.skill-card:hover, .project-card:hover, nav a:hover {
-  background-color: #2980b9;
-  color: #fff;
+.skill-card:hover, .project-card:hover {
+  transform: scale(1.05);
 }
 
 /* Layout and Spacing */
