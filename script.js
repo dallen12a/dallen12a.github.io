@@ -24,3 +24,21 @@ function toggleTheme() {
     link.classList.toggle('dark-theme');
   });
 }
+
+function scrollToElement(element) {
+  window.scroll({
+    behavior: 'smooth',
+    left: 0,
+    top: element.offsetTop
+  });
+}
+
+const projectLinks = document.querySelectorAll('.project-link');
+projectLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetCardId = link.getAttribute('href').substring(1);
+    const targetCard = document.getElementById(targetCardId);
+    scrollToElement(targetCard);
+  });
+});
