@@ -3,66 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>GitHub Portfolio</title>
+  <title>Software Engineer Portfolio</title>
 </head>
 <body>
   <div class="container">
-    <div class="profile-card card">
-      <img src="https://avatars.githubusercontent.com/u/107562574?v=4" alt="Profile Picture" class="profile-picture">
-      <div class="card-content">
-        <div class="name">Hi, I am Dave 👋</div>
-        <div class="position">Software Engineering Student</div>
-        <div class="location">Based in New York</div>
-        <div class="contact">
-          <a href="mailto:dave@example.com">Email</a>
-          <a href="https://www.linkedin.com/in/dave" target="_blank">LinkedIn</a>
-          <a href="https://github.com/dave" target="_blank">GitHub</a>
-        </div>
-        <div class="about">
-          <div class="header">About</div>
-          <div class="content">
-            I am a passionate software engineering student in my final year, eager to learn and grow in the field of technology. I have experience working on various projects, showcasing my dedication and skills. My interests lie in software design, algorithms, and data structures. I am always open to new opportunities and collaborations.
-          </div>
-        </div>
-        <div class="programming-skills">
-          <div class="header">Programming Skills</div>
-          <ul>
-            <li><span class="skill">SQL</span></li>
-            <li><span class="skill">Python</span></li>
-            <li><span class="skill">C++</span></li>
-            <li><span class="skill">Java</span></li>
-            <li><span class="skill">Kotlin</span></li>
-            <li><span class="skill">Excel</span></li>
-            <li><span class="skill">Word</span></li>
-            <li><span class="skill">Javascript</span></li>
-            <li><span class="skill">HTML</span></li>
-            <li><span class="skill">CSS</span></li>
-          </ul>
-        </div>
+    <div class="profile">
+      <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+      <div class="profile-info">
+        <h1>John Doe</h1>
+        <p class="about-me">A dedicated and passionate software engineering student, eager to learn and contribute to the tech industry.</p>
+        <p class="skills">Skills: HTML, CSS, JavaScript, Python, Java, SQL</p>
+        <p class="contact-info">Contact Info: <a href="mailto:john.doe@example.com">john.doe@example.com</a> | <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a> | <a href="https://github.com/johndoe" target="_blank">GitHub</a></p>
       </div>
     </div>
     <div class="projects">
-      <div class="header">Projects</div>
-      <div class="project card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)" onclick="toggleDescription(this)">
-        <img src="path_to_project1_image.jpg" alt="Project 1 Image">
-        <div class="card-content">
-          <div class="title">Project 1</div>
-          <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur varius diam, vitae cursus velit vestibulum in.</div>
-        </div>
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Description of Project 1.</p>
+        <a href="#" class="project-link">View Project</a>
       </div>
-      <div class="project card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)" onclick="toggleDescription(this)">
-        <img src="path_to_project2_image.jpg" alt="Project 2 Image">
-        <div class="card-content">
-          <div class="title">Project 2</div>
-          <div class="description">Sed auctor tellus ut lorem sollicitudin, a interdum ligula tincidunt. Curabitur maximus urna at mi finibus sollicitudin.</div>
-        </div>
-      </div>
-      <!-- Add 6 more projects -->
-      <!-- ... -->
+      <!-- Add more project cards (total 8) here -->
     </div>
   </div>
+
+  <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+
   <script src="script.js"></script>
 </body>
 </html>
