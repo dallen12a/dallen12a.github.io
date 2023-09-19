@@ -1,125 +1,85 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  padding: 20px;
-  background-color: #282c34;
-  color: #fff;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
   display: flex;
-  justify-content: space-around;
-}
-
-.card {
-  background-color: #1e2127;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 10px;
-  margin: 10px;
 }
 
-.profile-card {
-  width: 300px;
+.profile {
+  width: 40%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .profile-picture {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
 }
 
-.card-content {
+.profile-info {
   margin-top: 20px;
-}
-
-.name {
-  font-size: 1.5em;
-}
-
-.position {
-  font-style: italic;
-}
-
-.location {
-  margin-top: 5px;
-}
-
-.contact {
-  margin-top: 10px;
-}
-
-.contact a {
-  margin-right: 10px;
-  color: #3498db;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  text-decoration: underline;
-}
-
-.about {
-  margin-top: 20px;
-}
-
-.about .header {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.programming-skills ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.programming-skills li {
-  margin-bottom: 5px;
-}
-
-.skill {
-  background-color: #3498db;
-  color: #fff;
-  padding: 3px 15px;
-  border-radius: 20px;
 }
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 55%;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-.project {
-  width: 47%;
-  margin: 10px 0;
+.project-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
-.project img {
-  width: 100%;
-  border-radius: 10px 10px 0 0;
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
-.project .card-content {
+.project-link {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
-.project .title {
-  font-weight: bold;
-  margin-top: 10px;
+.theme-toggle:hover {
+  background-color: #444;
 }
 
-.project .description {
-  margin-top: 5px;
-  display: none;
-}
-
-/* Add waving hand animation */
-@keyframes wave {
-  0%, 100% { transform: rotate(0deg); }
-  20%, 60% { transform: rotate(-30deg); }
-  40%, 80% { transform: rotate(30deg); }
-}
-
-.waving-hand {
-  animation: wave 2s infinite;
+.dark-theme {
+  background-color: #222;
+  color: #fff;
 }
