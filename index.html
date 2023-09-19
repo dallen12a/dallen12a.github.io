@@ -18,59 +18,35 @@
         <p class="contact-info">Contact Info: <a href="mailto:david_j_allen@icloud.com">david_j_allen@icloud.com</a> | <a href="https://linkedin.com/in/dallen12" target="_blank">LinkedIn</a> | <a href="https://github.com/dallen12a" target="_blank">GitHub</a></p>
       </div>
     </div>
-      <div class="projects">
-  <h2>Projects</h2>
-  <div class="project-card">
-    <h3>Course Planner</h3>
+    <div class="projects">
+      <h2>Projects</h2>
+      <div class="project-card" onclick="expandProject(this)">
+        <h3>Course Planner</h3>
         <div class="languages">
           <span class="bubble">C++</span>
           <span class="bubble">CSS</span>
           <span class="bubble">JavaScript</span>
         </div>
         <p>Base level course planner that allows import and print of courses from a CSV file.</p>
-        <a href="#" class="project-link">View Project</a>
-  </div>
-  <div class="project-card">
-    <h3>Updated Course Planner</h3>
-    <p>The base level course planner was improved and converted to two other prevalent programming languages.</p>
-    <a href="#" class="project-link">View Project</a>
-  </div>
-  <div class="project-card">
-    <h3>Fully Enhanced Course Planner</h3>
-    <p>The updated course planner was taken and functionality was added to incorporate a course and user database with additional functionality.</p>
-    <a href="#" class="project-link">View Project</a>
-  </div>
-  <div class="project-card">
-    <h3>Encryption Activity</h3>
-    <p>This program takes an input file and encrypts it using XOR and outputs the encrypted file.</p>
-    <a href="#" class="project-link">View Project</a>
-  </div>
-  <div class="project-card">
-    <h3>Enhanced Encryption Activity</h3>
-    <p>This program takes the original encryption activity and uses a more widely reknowned encryption method: AES.</p>
-    <a href="#" class="project-link">View Project</a>
-  </div>
-  <div class="project-card">
-    <h3>Project 6</h3>
-    <p>Description of Project 6.</p>
-    <a href="#" class="project-link">View Project</a>
-  </div>
-  <div class="project-card">
-    <h3>Project 7</h3>
-    <p>Description of Project 7.</p>
-    <a href="#" class="project-link">View Project</a>
-  </div>
-  <div class="project-card">
-    <h3>Project 8</h3>
-    <p>Description of Project 8.</p>
-    <a href="#" class="project-link">View Project</a>
-  </div>
-</div>
+        <div class="project-details">
+          <img src="/images/course_planner_screenshot.png" alt="Course Planner Screenshot">
+          <p>Additional information about the Course Planner project.</p>
+          <a href="https://github.com/your_username/course-planner" class="project-link" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card" onclick="expandProject(this)">
+        <h3>Updated Course Planner</h3>
+        <p>The base level course planner was improved and converted to two other prevalent programming languages.</p>
+        <div class="project-details">
+          <img src="/images/updated_course_planner_screenshot.png" alt="Updated Course Planner Screenshot">
+          <p>Additional information about the Updated Course Planner project.</p>
+          <a href="https://github.com/your_username/updated-course-planner" class="project-link" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <!-- Repeat similar structure for other projects -->
     </div>
   </div>
-
   <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
-
   <script src="script.js"></script>
 </body>
 </html>
