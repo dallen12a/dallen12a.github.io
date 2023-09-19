@@ -1,87 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dave's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <title>GitHub Portfolio</title>
 </head>
-
 <body>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
   <div class="container">
-
-    <div id="typing-container" class="typing-container">
-      <h1 id="typing-text" class="typing-animation"></h1>
+    <div class="profile">
+      <img src="path_to_profile_image.jpg" alt="Profile Picture" class="profile-picture">
+      <div class="profile-info">
+        <div class="name">Hi, I am Dave 👋</div>
+        <div class="position">Student at Southern New Hampshire University</div>
+        <div class="location">Based in New York</div>
+        <div class="contact">
+          <a href="mailto:your-email@example.com">Email</a>
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+          <a href="https://github.com/your-github" target="_blank">GitHub</a>
+        </div>
+        <div class="about">
+          <div class="header">About</div>
+          <div class="content">
+            Current software engineering student in final year. Add any additional information you'd like here.
+          </div>
+        </div>
+        <div class="programming-skills">
+          <div class="header">Programming Skills</div>
+          <ul>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Kotlin</li>
+            <li>Excel</li>
+            <li>Word</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <section id="about" class="about-me">
-      <h2>About Me:</h2>
-      <p>Final term student in the Software Engineering degree program at Southern New Hampshire University. This page serves as a demonstration of my personal as well as educational work. I'm passionate about creating efficient, scalable, and maintainable software solutions. In my free time, I enjoy hiking and exploring new technologies.</p>
-    </section>
-
-    <section id="skills" class="skills">
-      <h2 class="section-heading">Skills:</h2>
-      <div class="skill-card">
-        <h3>HTML</h3>
+    <div class="projects">
+      <div class="header">Projects</div>
+      <div class="project">
+        <img src="path_to_project_image.jpg" alt="Project Image">
+        <div class="title">Software Engineering/Design</div>
+        <div class="description">Small description of the project goes here.</div>
       </div>
-      <div class="skill-card">
-        <h3>CSS</h3>
+      <div class="project">
+        <img src="path_to_project_image.jpg" alt="Project Image">
+        <div class="title">Algorithms and Data Structures</div>
+        <div class="description">Small description of the project goes here.</div>
       </div>
-      <div class="skill-card">
-        <h3>Java</h3>
+      <div class="project">
+        <img src="path_to_project_image.jpg" alt="Project Image">
+        <div class="title">Databases</div>
+        <div class="description">Small description of the project goes here.</div>
       </div>
-      <div class="skill-card">
-        <h3>Python</h3>
-      </div>
-      <div class="skill-card">
-        <h3>JavaScript</h3>
-      </div>
-      <div class="skill-card">
-        <h3>SQL</h3>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <h2 class="section-heading">Projects:</h2>
-      <div class="project-card">
-        <h3>Software Engineering/Design Project</h3>
-        <p>This project involved designing and implementing a web application for efficient project management using modern software engineering principles.</p>
-        <a href="#">Learn more</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Algorithms and Data Structures Project</h3>
-        <p>Implemented various algorithms and data structures, optimizing for performance and memory usage.</p>
-        <a href="#">Learn more</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Databases Project</h3>
-        <p>Designed and implemented a database management system, optimizing for speed and data integrity.</p>
-        <a href="#">Learn more</a>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2 class="section-heading">Contact:</h2>
-      <p>Email: dave@example.com</p>
-      <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
-      <p>GitHub: <a href="#">GitHub Profile</a></p>
-    </section>
-
+      <!-- Add more projects as needed -->
+    </div>
   </div>
-
-  <script src="script.js"></script>
 </body>
-
 </html>
