@@ -43,6 +43,10 @@ body {
   color: #ffffff; /* Adjust the text color for dark mode */
 }
 
+.dark-theme .github-link {
+  color: #4CAF50; /* Green in dark mode */
+}
+
 .dark-theme .profile h1 {
   color: #ddd;
 }
