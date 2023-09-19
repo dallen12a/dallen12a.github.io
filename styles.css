@@ -34,6 +34,10 @@ body {
   color: #fff;
 }
 
+.profile.dark-theme h1 {
+  color: #ddd; /* Adjust the color for the name */
+}
+
 .profile-picture {
   width: 150px;
   height: 150px;
@@ -76,6 +80,10 @@ body {
 .project-card.dark-theme {
   background-color: #444;
   color: #fff;
+}
+
+.project-card.dark-theme h3 {
+  color: #ddd; /* Adjust the color for project headers */
 }
 
 .project-card:hover {
