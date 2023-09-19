@@ -1,7 +1,9 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 20px;
+  background-color: #282c34;
+  color: #fff;
 }
 
 .container {
@@ -10,10 +12,13 @@ body {
 }
 
 .card {
-  background-color: #f0f0f0;
+  background-color: #1e2127;
   padding: 20px;
   border-radius: 10px;
   margin: 10px;
+}
+
+.profile-card {
   width: 300px;
 }
 
@@ -45,6 +50,12 @@ body {
 
 .contact a {
   margin-right: 10px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
 }
 
 .about {
@@ -68,8 +79,8 @@ body {
 .skill {
   background-color: #3498db;
   color: #fff;
-  padding: 3px 8px;
-  border-radius: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
 }
 
 .projects {
@@ -82,13 +93,26 @@ body {
   border: 2px solid #ccc;
   border-radius: 10px;
   margin: 10px;
-  width: 300px;
+  width: 250px;
   transition: transform 0.3s ease-in-out;
 }
 
 .project img {
   width: 100%;
   border-radius: 10px 10px 0 0;
+}
+
+.project .card-content {
+  padding: 10px;
+}
+
+.project .title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.project .description {
+  margin-top: 5px;
 }
 
 .project:hover {
