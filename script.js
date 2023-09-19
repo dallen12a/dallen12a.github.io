@@ -5,6 +5,7 @@ function toggleTheme() {
   const projects = document.querySelector('.projects');
   const projectCards = document.querySelectorAll('.project-card');
   const projectLinks = document.querySelectorAll('.project-link');
+  const profileLinks = document.querySelectorAll('.profile .contact-info a');
 
   body.classList.toggle('dark-theme');
   container.classList.toggle('dark-theme');
@@ -16,6 +17,10 @@ function toggleTheme() {
   });
 
   projectLinks.forEach(link => {
+    link.classList.toggle('dark-theme');
+  });
+
+  profileLinks.forEach(link => {
     link.classList.toggle('dark-theme');
   });
 }
