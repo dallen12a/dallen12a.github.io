@@ -101,6 +101,9 @@ body {
   color: #fff;
 }
 
+.dark-theme .projects h2 {
+  color: #ddd;
+}
 .project-card {
   padding: 20px;
   margin-bottom: 20px;
