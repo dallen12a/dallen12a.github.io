@@ -10,14 +10,22 @@ function type() {
   }
 }
 
-function toggleDarkMode() {
-  const body = document.body;
-  body.classList.toggle('dark-mode');
+function fadeInSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  section.style.opacity = 0;
 
-  const toggleButton = document.getElementById('toggle-button');
-  toggleButton.innerText = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+  let sectionTop = section.offsetTop;
+  let windowHeight = window.innerHeight;
 
-  localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+  if (sectionTop < windowHeight) {
+    section.style.opacity = 1;
+  } else {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > sectionTop - windowHeight + 200) {
+        section.style.opacity = 1;
+      }
+    });
+  }
 }
 
 function scrollToSection(sectionId) {
@@ -28,9 +36,12 @@ function scrollToSection(sectionId) {
   });
 }
 
-// Set up event listener for the toggle button
-const toggleButton = document.getElementById('toggle-button');
-toggleButton.addEventListener('click', toggleDarkMode);
+// Typing effect
+type();
+
+// Fade in effects for skills and projects
+fadeInSection('skills');
+fadeInSection('projects');
 
 // Set up event listeners for navigation links
 const navLinks = document.querySelectorAll('nav a');
@@ -41,11 +52,3 @@ navLinks.forEach(link => {
     scrollToSection(targetSectionId);
   });
 });
-
-// Check the user's preference for dark mode
-const darkModePref = localStorage.getItem('dark-mode');
-if (darkModePref === 'true') {
-  toggleDarkMode();
-}
-
-type();
