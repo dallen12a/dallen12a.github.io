@@ -15,13 +15,11 @@ function toggleDarkMode() {
   body.classList.toggle('dark-mode');
   
   const toggleButton = document.getElementById('toggle-button');
+  toggleButton.addEventListener('click', toggleDarkMode);
   toggleButton.innerText = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
 
   localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
 }
-
-const toggleButton = document.getElementById('toggle-button');
-toggleButton.addEventListener('click', toggleDarkMode);
 
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
