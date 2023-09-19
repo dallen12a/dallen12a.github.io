@@ -1,48 +1,31 @@
-function toggleTheme() {
-  const body = document.body;
-  const container = document.querySelector('.container');
-  const profile = document.querySelector('.profile');
-  const projects = document.querySelector('.projects');
-  const projectCards = document.querySelectorAll('.project-card');
-  const projectLinks = document.querySelectorAll('.project-link');
-  const profileLinks = document.querySelectorAll('.profile .contact-info a');
+function expandProject(card) {
+  card.classList.toggle("expanded");
 
-  body.classList.toggle('dark-theme');
-  container.classList.toggle('dark-theme');
+  const projectDetails = card.querySelector('.project-details');
+  projectDetails.classList.toggle('visible');
+}
+
+function toggleTheme() {
+  document.body.classList.toggle("dark-theme");
+  const profile = document.querySelector('.profile');
   profile.classList.toggle('dark-theme');
+  const profilePicture = document.querySelector('.profile-picture');
+  profilePicture.classList.toggle('dark-theme');
+  const projects = document.querySelector('.projects');
   projects.classList.toggle('dark-theme');
 
+  const projectCards = document.querySelectorAll('.project-card');
   projectCards.forEach(card => {
     card.classList.toggle('dark-theme');
   });
 
-function expandProject(card) {
-  card.classList.toggle("expanded");
-}
+  const projectHeaders = document.querySelectorAll('.project-card h3');
+  projectHeaders.forEach(header => {
+    header.classList.toggle('dark-theme');
+  });
 
+  const projectLinks = document.querySelectorAll('.project-link');
   projectLinks.forEach(link => {
     link.classList.toggle('dark-theme');
   });
-
-  profileLinks.forEach(link => {
-    link.classList.toggle('dark-theme');
-  });
 }
-
-function scrollToElement(element) {
-  window.scroll({
-    behavior: 'smooth',
-    left: 0,
-    top: element.offsetTop
-  });
-}
-
-const projectLinks = document.querySelectorAll('.project-link');
-projectLinks.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const targetCardId = link.getAttribute('href').substring(1);
-    const targetCard = document.getElementById(targetCardId);
-    scrollToElement(targetCard);
-  });
-});
