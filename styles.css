@@ -7,7 +7,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.dark-theme {
+.dark-theme body {
   background-color: #222;
   color: #fff;
 }
@@ -29,12 +29,12 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.profile.dark-theme {
+.dark-theme .profile {
   background-color: #333;
   color: #fff;
 }
 
-.profile.dark-theme h1 {
+.dark-theme .profile h1 {
   color: #ddd; /* Adjust the color for the name */
 }
 
@@ -82,7 +82,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.projects.dark-theme {
+.dark-theme .projects {
   background-color: #333;
   color: #fff;
 }
@@ -95,12 +95,12 @@ body {
   transition: transform 0.3s;
 }
 
-.project-card.dark-theme {
+.dark-theme .project-card {
   background-color: #444;
   color: #fff;
 }
 
-.project-card.dark-theme h3 {
+.dark-theme .project-card h3 {
   color: #ddd; /* Adjust the color for project headers */
 }
 
