@@ -1,5 +1,40 @@
 /* Add these styles to styles.css */
 
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav {
+  background-color: #2980b9;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
 /* Typing animation */
 @keyframes typing {
   from {
@@ -8,9 +43,9 @@
 }
 
 .typing-animation {
-  overflow: hidden; /* Hide overflowing characters */
-  border-right: .15em solid orange; /* Cursor style */
-  white-space: nowrap; /* Keep text in one line */
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
   margin: 0 auto;
   animation: typing 2s steps(40, end);
 }
@@ -36,4 +71,32 @@
 .section-heading {
   color: #4CAF50;
   font-size: 2em;
+}
+
+.about-me, .skills, .projects, .contact {
+  margin-bottom: 40px;
+}
+
+.skill-card, .project-card {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  color: white;
+}
+
+.skill-card {
+  background-color: #3498db;
+}
+
+.project-card {
+  background-color: #2ecc71;
+}
+
+.skill-card:hover, .project-card:hover {
+  background-color: #2980b9;
+}
+
+.contact a {
+  color: #e74c3c;
 }
