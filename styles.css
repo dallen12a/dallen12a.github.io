@@ -113,6 +113,15 @@ body {
   text-decoration: none;
 }
 
+.project-card .project-details {
+  display: none;
+  margin-top: 10px;
+}
+
+.project-card.expanded .project-details {
+  display: block;
+}
+
 .dark-theme .project-link {
   color: #4CAF50; /* Green in dark mode */
 }
