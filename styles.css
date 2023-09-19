@@ -1,103 +1,39 @@
-/* Default styles for all screens */
-body {
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  background-color: #f0f0f0;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Add these styles to styles.css */
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
 
-.container {
-  margin: 50px auto;
-  max-width: 80%;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.typing-animation {
+  overflow: hidden; /* Hide overflowing characters */
+  border-right: .15em solid orange; /* Cursor style */
+  white-space: nowrap; /* Keep text in one line */
+  margin: 0 auto;
+  animation: typing 2s steps(40, end);
 }
 
-/* Typography and Fonts */
-h1, h2, h3 {
-  font-family: 'Georgia', serif;
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
-h1 {
-  font-size: 3em;
-  font-weight: bold;
+.bounce {
+  animation: bounce 1s infinite;
+  transform-origin: bottom;
+}
+
+.section-heading {
   color: #4CAF50;
-}
-
-h2 {
   font-size: 2em;
-  color: #2196F3;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-p {
-  font-size: 1.2em;
-  line-height: 1.6;
-}
-
-/* Animations and Transitions */
-.skill-card, .project-card {
-  transition: transform 0.3s ease;
-}
-
-.skill-card:hover, .project-card:hover {
-  transform: scale(1.05);
-}
-
-/* Layout and Spacing */
-nav {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Additional styles for the new sections */
-.contact {
-  margin-top: 40px;
-}
-
-.contact p {
-  margin: 10px 0;
-}
-
-.contact a {
-  color: #3498db;
-}
-
-/* Additional styles for the skills section */
-.skill-card {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 20px;
-  background-color: #3498db;
-  color: #fff;
-}
-
-.skill-card:hover {
-  background-color: #2980b9;
 }
