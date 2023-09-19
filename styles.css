@@ -125,6 +125,25 @@ h1, h2, h3 {
   color: #333;
 }
 
+/* Add styles for the language bubbles and project descriptions */
+.languages {
+  margin-bottom: 10px;
+}
+
+.languages .bubble {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #3498db; /* Blue */
+  color: #fff;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+}
+
 .theme-toggle {
   position: fixed;
   bottom: 20px;
