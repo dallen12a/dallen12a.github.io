@@ -1,10 +1,3 @@
-function expandProject(card) {
-  card.classList.toggle("expanded");
-
-  const projectDetails = card.querySelector('.project-details');
-  projectDetails.classList.toggle('visible');
-}
-
 function toggleTheme() {
   document.body.classList.toggle("dark-theme");
   const profile = document.querySelector('.profile');
@@ -28,4 +21,11 @@ function toggleTheme() {
   projectLinks.forEach(link => {
     link.classList.toggle('dark-theme');
   });
+}
+
+function expandProject(card) {
+  card.classList.toggle("expanded");
+
+  const projectDetails = card.querySelector('.project-details');
+  projectDetails.classList.toggle('visible');
 }
