@@ -6,7 +6,7 @@ function type() {
   if (index < typingText.length) {
     typingDiv.innerHTML += typingText.charAt(index);
     index++;
-    setTimeout(type, 100);
+    setTimeout(type, 50); // Adjust the delay for faster typing effect
   }
 }
 
@@ -15,14 +15,11 @@ function toggleDarkMode() {
   const toggleButton = document.getElementById('toggle-button');
   body.classList.toggle('dark-mode');
   toggleButton.innerText = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
-
-  // Optionally, save the user's preference for future visits
-  // localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
 }
 
 // Set up event listener for the toggle button
 const toggleButton = document.getElementById('toggle-button');
 toggleButton.addEventListener('click', toggleDarkMode);
 
-// Start typing effect
-type();
+// Start typing effect after a short delay
+setTimeout(type, 1000); // Adjust the delay before starting typing effect
