@@ -2,7 +2,8 @@
 body {
   font-family: 'Arial', sans-serif;
   text-align: center;
-  transition: background-color 0.3s, color 0.3s;
+  background-color: #f0f0f0;
+  color: #333;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,44 +13,34 @@ body {
   margin: 50px auto;
   max-width: 80%;
   padding: 20px;
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Typography and Fonts */
 h1, h2, h3 {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Georgia', serif;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 3em;
   font-weight: bold;
+  color: #4CAF50;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2em;
+  color: #2196F3;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1.5em;
 }
 
 p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
-}
-
-@media (max-width: 576px) {
-  h1 {
-    font-size: 28px;
-  }
+  font-size: 1.2em;
+  line-height: 1.6;
 }
 
 /* Animations and Transitions */
@@ -63,6 +54,8 @@ p {
 
 /* Layout and Spacing */
 nav {
+  background-color: #333;
+  color: white;
   padding: 20px;
 }
 
@@ -78,21 +71,8 @@ nav li {
 }
 
 nav a {
+  color: white;
   text-decoration: none;
-}
-
-/* Dark mode styles (adjust as needed) */
-body.dark-mode {
-  background-color: black;
-  color: lightgrey;
-}
-
-body.dark-mode nav {
-  background-color: #111;
-}
-
-body.dark-mode nav a {
-  color: #f9f9f9;
 }
 
 /* Additional styles for the new sections */
@@ -110,14 +90,14 @@ body.dark-mode nav a {
 
 /* Additional styles for the skills section */
 .skill-card {
-  transition: background-color 0.3s, color 0.3s;
-}
-
-body.dark-mode .skill-card {
-  background-color: #2980b9;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #3498db;
   color: #fff;
 }
 
-body.dark-mode .skill-card:hover {
-  background-color: #3498db;
+.skill-card:hover {
+  background-color: #2980b9;
 }
