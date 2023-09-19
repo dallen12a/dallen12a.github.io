@@ -8,59 +8,66 @@
 </head>
 <body>
   <div class="container">
-    <div class="profile-card">
-      <img src="https://shorturl.at/BFGK6" alt="Profile Picture" class="profile-picture">
-      <div class="profile-info">
+    <div class="profile-card card">
+      <img src="path_to_profile_image.jpg" alt="Profile Picture" class="profile-picture">
+      <div class="card-content">
         <div class="name">Hi, I am Dave 👋</div>
         <div class="position">Student at Southern New Hampshire University</div>
         <div class="location">Based in New York</div>
         <div class="contact">
-          <a href="mailto:david_j_allen@icloud.com">Email</a>
-          <a href="https://www.linkedin.com/in/davidallen12/" target="_blank">LinkedIn</a>
-          <a href="https://github.com/dallen12a" target="_blank">GitHub</a>
+          <a href="mailto:your-email@example.com">Email</a>
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+          <a href="https://github.com/your-github" target="_blank">GitHub</a>
         </div>
         <div class="about">
           <div class="header">About</div>
           <div class="content">
-            Current software engineering student in final year.
+            Current software engineering student in the final year. Add any additional information you'd like here.
           </div>
         </div>
         <div class="programming-skills">
           <div class="header">Programming Skills</div>
           <ul>
-            <li>SQL</li>
-            <li>Python</li>
-            <li>C++</li>
-            <li>Java</li>
-            <li>Kotlin</li>
-            <li>Excel</li>
-            <li>Word</li>
-            <li>Javascript</li>
-            <li>HTML</li>
-            <li>CSS</li>
+            <li><span class="skill">SQL</span></li>
+            <li><span class="skill">Python</span></li>
+            <li><span class="skill">C++</span></li>
+            <li><span class="skill">Java</span></li>
+            <li><span class="skill">Kotlin</span></li>
+            <li><span class="skill">Excel</span></li>
+            <li><span class="skill">Word</span></li>
+            <li><span class="skill">Javascript</span></li>
+            <li><span class="skill">HTML</span></li>
+            <li><span class="skill">CSS</span></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="projects">
       <div class="header">Projects</div>
-      <div class="project">
-        <img src="https://shorturl.at/fAHMU" alt="Project Image">
-        <div class="title">Software Engineering/Design</div>
-        <div class="description">Small description of the project goes here.</div>
+      <div class="project card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+        <img src="path_to_project_image.jpg" alt="Project Image">
+        <div class="card-content">
+          <div class="title">Software Engineering/Design</div>
+          <div class="description">Small description of the project goes here. Small description of the project goes here.</div>
+        </div>
       </div>
-      <div class="project">
-        <img src="https://shorturl.at/fAHMU" alt="Project Image">
-        <div class="title">Algorithms and Data Structures</div>
-        <div class="description">Small description of the project goes here.</div>
+      <div class="project card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+        <img src="path_to_project_image.jpg" alt="Project Image">
+        <div class="card-content">
+          <div class="title">Algorithms and Data Structures</div>
+          <div class="description">Small description of the project goes here. Small description of the project goes here.</div>
+        </div>
       </div>
-      <div class="project">
-        <img src="https://shorturl.at/fAHMU" alt="Project Image">
-        <div class="title">Databases</div>
-        <div class="description">Small description of the project goes here.</div>
+      <div class="project card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+        <img src="path_to_project_image.jpg" alt="Project Image">
+        <div class="card-content">
+          <div class="title">Databases</div>
+          <div class="description">Small description of the project goes here. Small description of the project goes here.</div>
+        </div>
       </div>
       <!-- Add more projects as needed -->
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
