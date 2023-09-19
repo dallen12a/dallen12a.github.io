@@ -1,8 +1,8 @@
 let index = 0;
-const typingText = "Hi, I'm Dave!";
-const typingDiv = document.getElementById('typing-text');
+const typingText = "Welcome to Dave's Portfolio";
 
 function type() {
+  const typingDiv = document.getElementById('typing-text');
   if (index < typingText.length) {
     typingDiv.innerHTML += typingText.charAt(index);
     index++;
@@ -10,19 +10,19 @@ function type() {
   }
 }
 
-function bounceOnScroll() {
-  const elementsToAnimate = document.querySelectorAll('.bounce');
-  elementsToAnimate.forEach(element => {
-    const elementTop = element.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-    if (elementTop < windowHeight) {
-      element.classList.add('bounce-animation');
-    }
-  });
+function toggleDarkMode() {
+  const body = document.body;
+  const toggleButton = document.getElementById('toggle-button');
+  body.classList.toggle('dark-mode');
+  toggleButton.innerText = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+
+  // Optionally, save the user's preference for future visits
+  // localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
 }
 
-// Typing effect
-type();
+// Set up event listener for the toggle button
+const toggleButton = document.getElementById('toggle-button');
+toggleButton.addEventListener('click', toggleDarkMode);
 
-// Bounce animation for skills and projects on scroll
-window.addEventListener('scroll', bounceOnScroll);
+// Start typing effect
+type();
