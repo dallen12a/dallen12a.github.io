@@ -7,12 +7,18 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+.dark-theme {
+  background-color: #222;
+  color: #fff;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .profile {
@@ -20,6 +26,12 @@ body {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.profile.dark-theme {
+  background-color: #333;
+  color: #fff;
 }
 
 .profile-picture {
@@ -32,11 +44,25 @@ body {
   margin-top: 20px;
 }
 
+.skills {
+  margin-top: 10px;
+}
+
+.contact-info {
+  margin-top: 10px;
+}
+
 .projects {
   width: 55%;
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.projects.dark-theme {
+  background-color: #333;
+  color: #fff;
 }
 
 .project-card {
@@ -45,6 +71,11 @@ body {
   background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+}
+
+.project-card.dark-theme {
+  background-color: #444;
+  color: #fff;
 }
 
 .project-card:hover {
@@ -77,9 +108,4 @@ h1, h2, h3 {
 
 .theme-toggle:hover {
   background-color: #444;
-}
-
-.dark-theme {
-  background-color: #222;
-  color: #fff;
 }
