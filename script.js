@@ -16,6 +16,10 @@ function toggleTheme() {
     card.classList.toggle('dark-theme');
   });
 
+function expandProject(card) {
+  card.classList.toggle("expanded");
+}
+
   projectLinks.forEach(link => {
     link.classList.toggle('dark-theme');
   });
