@@ -2,8 +2,8 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #1e1e1e; /* Dark background */
-  color: #f0f0f0; /* Light text */
+  background-color: #1a1a1a;
+  color: #e0e0e0;
   margin: 0;
   padding: 0;
 }
@@ -31,13 +31,29 @@ nav li {
 }
 
 nav a {
-  color: #f0f0f0;
+  color: #e0e0e0;
   text-decoration: none;
 }
 
-/* ... (rest of the existing CSS) ... */
+.typing-container {
+  text-align: center;
+  padding: 20px;
+}
 
-/* Additional styles for skills and projects */
+.typing-animation {
+  display: inline-block;
+  border-right: 2px solid #29b6f6;
+  padding-right: 8px;
+  font-size: 36px;
+}
+
+.section-heading {
+  border-bottom: 2px solid #29b6f6;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #29b6f6;
+}
+
 .skills, .projects {
   display: flex;
   flex-wrap: wrap;
