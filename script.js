@@ -1,26 +1,12 @@
 function toggleTheme() {
-  document.body.classList.toggle("dark-theme");
-  const profile = document.querySelector('.profile');
-  profile.classList.toggle('dark-theme');
-  const profilePicture = document.querySelector('.profile-picture');
-  profilePicture.classList.toggle('dark-theme');
-  const projects = document.querySelector('.projects');
-  projects.classList.toggle('dark-theme');
+  const themes = ['light-theme', 'dark-theme', 'blue-theme', 'green-theme'];
+  const body = document.body;
 
-  const projectCards = document.querySelectorAll('.project-card');
-  projectCards.forEach(card => {
-    card.classList.toggle('dark-theme');
-  });
+  const currentThemeIndex = themes.indexOf(body.classList.value);
+  const nextThemeIndex = (currentThemeIndex + 1) % themes.length;
 
-  const projectHeaders = document.querySelectorAll('.project-card h3');
-  projectHeaders.forEach(header => {
-    header.classList.toggle('dark-theme');
-  });
-
-  const projectLinks = document.querySelectorAll('.project-link');
-  projectLinks.forEach(link => {
-    link.classList.toggle('dark-theme');
-  });
+  body.classList.remove(...themes);
+  body.classList.add(themes[nextThemeIndex]);
 }
 
 function expandProject(card) {
