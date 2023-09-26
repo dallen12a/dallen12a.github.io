@@ -316,3 +316,121 @@ h1, h2, h3 {
 .green-theme .project-link {
   color: #4CAF50;
 }
+
+.halloween-theme body {
+  background-color: #222;
+  color: #ff6600; /* Orange */
+}
+
+.halloween-theme .profile {
+  background-color: #333;
+  color: #fff;
+}
+
+.halloween-theme .projects {
+  background-color: #444;
+  color: #fff;
+}
+
+.halloween-theme .github-link {
+  color: #4CAF50; /* Green in dark mode */
+}
+
+.halloween-theme .profile h1 {
+  color: #ddd;
+}
+
+.halloween-theme .contact-info a {
+  color: #3498db;
+}
+
+.halloween-theme .profile-picture {
+  border: 3px solid #ff6600; /* Orange */
+}
+
+.halloween-theme .project-card {
+  background-color: #555;
+  color: #fff;
+}
+
+.halloween-theme .project-card h3 {
+  color: #ddd;
+}
+
+.halloween-theme .project-link {
+  color: #4CAF50;
+}
+
+.halloween-theme .languages .bubble {
+  background-color: #ff6600; /* Orange */
+  color: #000;
+}
+
+.christmas-theme body {
+  background-color: #222;
+  color: #ff0000; /* Red */
+}
+
+.christmas-theme .profile {
+  background-color: #333;
+  color: #fff;
+}
+
+.christmas-theme .projects {
+  background-color: #444;
+  color: #fff;
+}
+
+.christmas-theme .github-link {
+  color: #4CAF50; /* Green in dark mode */
+}
+
+.christmas-theme .profile h1 {
+  color: #ddd;
+}
+
+.christmas-theme .contact-info a {
+  color: #3498db;
+}
+
+.christmas-theme .profile-picture {
+  border: 3px solid #ff0000; /* Red */
+}
+
+.christmas-theme .project-card {
+  background-color: #555;
+  color: #fff;
+}
+
+.christmas-theme .project-card h3 {
+  color: #ddd;
+}
+
+.christmas-theme .project-link {
+  color: #4CAF50;
+}
+
+.christmas-theme .languages .bubble {
+  background-color: #ff0000; /* Red */
+  color: #fff;
+}
+
+.light-theme .languages .bubble {
+  background-color: #3498db; /* Blue */
+  color: #fff;
+}
+
+.dark-theme .languages .bubble {
+  background-color: #4CAF50; /* Green */
+  color: #fff;
+}
+
+.blue-theme .languages .bubble {
+  background-color: #2980b9; /* Dark Blue */
+  color: #fff;
+}
+
+.green-theme .languages .bubble {
+  background-color: #27ae60; /* Green */
+  color: #fff;
+}
