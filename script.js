@@ -1,5 +1,5 @@
 let currentThemeIndex = 0;
-const themes = ['light-theme', 'dark-theme', 'blue-theme', 'green-theme', halloween-theme', 'christmas-theme'];
+const themes = ['light-theme', 'dark-theme', 'blue-theme', 'green-theme', 'halloween-theme', 'christmas-theme'];
 
 function toggleTheme() {
   const body = document.body;
