@@ -436,9 +436,9 @@ h1, h2, h3 {
 }
 
 .halloween-theme .projects h2 {
-  color: #333; /* Match color with profile text for Halloween theme */
+  color: #fff; /* Match color with profile text for Halloween theme */
 }
 
 .christmas-theme .projects h2 {
-  color: #333; /* Match color with profile text for Christmas theme */
+  color: #fff; /* Match color with profile text for Christmas theme */
 }
