@@ -31,20 +31,21 @@ body {
 
 @media (orientation: portrait) {
   .profile {
-    width: 60%; /* Adjust the width to occupy the full width for portrait layout on smaller screens (e.g., mobile) */
+    width: 60%;
   }
 }
+
 .dark-theme .profile {
   background-color: #333;
   color: #fff;
 }
 
 .projects.dark-theme {
-  color: #ffffff; /* Adjust the text color for dark mode */
+  color: #ffffff;
 }
 
 .dark-theme .github-link {
-  color: #4CAF50; /* Green in dark mode */
+  color: #4CAF50;
 }
 
 .dark-theme .profile h1 {
@@ -57,7 +58,7 @@ body {
 }
 
 .dark-theme .contact-info a {
-  color: #4CAF50 ;
+  color: #4CAF50;
 }
 
 .profile .contact-info a:hover {
@@ -103,6 +104,7 @@ body {
 .dark-theme .projects h2 {
   color: #ddd;
 }
+
 .project-card {
   padding: 20px;
   margin-bottom: 20px;
@@ -183,22 +185,134 @@ h1, h2, h3 {
   background-color: #444;
 }
 
+/* Light Theme */
+.light-theme .profile {
+  background-color: #fff;
+  color: #333;
+}
+
+.light-theme .projects {
+  background-color: #fff;
+  color: #333;
+}
+
+.light-theme .github-link {
+  color: #3498db;
+}
+
+.light-theme .profile h1 {
+  color: #000;
+}
+
+.light-theme .contact-info a {
+  color: #3498db;
+}
+
+.light-theme .profile-picture {
+  border: 3px solid #3498db;
+}
+
+.light-theme .projects h2 {
+  color: #333;
+}
+
+.light-theme .project-card {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.light-theme .project-card h3 {
+  color: #333;
+}
+
+.light-theme .project-link {
+  color: #3498db;
+}
+
 /* Blue Theme */
-.blue-theme body {
+.blue-theme .profile {
+  background-color: #c2d5e8;
+  color: #1a1a1a;
+}
+
+.blue-theme .projects {
   background-color: #d3e0ea;
   color: #1a1a1a;
 }
 
 .blue-theme .github-link {
-  color: #008cba; /* Blue for links in blue theme */
+  color: #3498db;
+}
+
+.blue-theme .profile h1 {
+  color: #1a1a1a;
+}
+
+.blue-theme .contact-info a {
+  color: #3498db;
+}
+
+.blue-theme .profile-picture {
+  border: 3px solid #3498db;
+}
+
+.blue-theme .projects h2 {
+  color: #1a1a1a;
+}
+
+.blue-theme .project-card {
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+}
+
+.blue-theme .project-card h3 {
+  color: #1a1a1a;
+}
+
+.blue-theme .project-link {
+  color: #3498db;
 }
 
 /* Green Theme */
-.green-theme body {
+.green-theme .profile {
+  background-color: #d7ebc3;
+  color: #1a1a1a;
+}
+
+.green-theme .projects {
   background-color: #eaf4e0;
   color: #1a1a1a;
 }
 
 .green-theme .github-link {
-  color: #23a43c; /* Green for links in green theme */
+  color: #4CAF50;
+}
+
+.green-theme .profile h1 {
+  color: #1a1a1a;
+}
+
+.green-theme .contact-info a {
+  color: #4CAF50;
+}
+
+.green-theme .profile-picture {
+  border: 3px solid #4CAF50;
+}
+
+.green-theme .projects h2 {
+  color: #1a1a1a;
+}
+
+.green-theme .project-card {
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+}
+
+.green-theme .project-card h3 {
+  color: #1a1a1a;
+}
+
+.green-theme .project-link {
+  color: #4CAF50;
 }
