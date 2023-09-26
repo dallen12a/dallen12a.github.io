@@ -434,3 +434,11 @@ h1, h2, h3 {
   background-color: #27ae60; /* Green */
   color: #fff;
 }
+
+.halloween-theme .projects h2 {
+  color: #333; /* Match color with profile text for Halloween theme */
+}
+
+.christmas-theme .projects h2 {
+  color: #333; /* Match color with profile text for Christmas theme */
+}
