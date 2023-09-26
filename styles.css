@@ -75,7 +75,6 @@ body {
   border: 3px solid #4CAF50;
 }
 
-
 .profile-info {
   margin-top: 20px;
 }
@@ -182,4 +181,24 @@ h1, h2, h3 {
 
 .theme-toggle:hover {
   background-color: #444;
+}
+
+/* Blue Theme */
+.blue-theme body {
+  background-color: #d3e0ea;
+  color: #1a1a1a;
+}
+
+.blue-theme .github-link {
+  color: #008cba; /* Blue for links in blue theme */
+}
+
+/* Green Theme */
+.green-theme body {
+  background-color: #eaf4e0;
+  color: #1a1a1a;
+}
+
+.green-theme .github-link {
+  color: #23a43c; /* Green for links in green theme */
 }
