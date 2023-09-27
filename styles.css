@@ -57,6 +57,31 @@ body {
   text-decoration: none;
 }
 
+.dark-theme .profile .contact-info a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.blue-theme .profile .contact-info a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.green-theme .profile .contact-info a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.halloween-theme .profile .contact-info a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.christmas-theme .profile .contact-info a {
+  color: #3498db;
+  text-decoration: none;
+}
+
 .dark-theme .contact-info a {
   color: #4CAF50;
 }
@@ -333,7 +358,7 @@ h1, h2, h3 {
 }
 
 .halloween-theme .github-link {
-  color: #4CAF50; /* Green in dark mode */
+  color: #3498db; /* Orange in dark mode */
 }
 
 .halloween-theme .profile h1 {
@@ -382,7 +407,7 @@ h1, h2, h3 {
 }
 
 .christmas-theme .github-link {
-  color: #4CAF50; /* Green in dark mode */
+  color: #3498db; /* Red in dark mode */
 }
 
 .christmas-theme .profile h1 {
