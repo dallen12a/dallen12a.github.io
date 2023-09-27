@@ -244,7 +244,29 @@
           </div>
           <p>
           The project sets up an OpenGL environment, loads and renders a 3D scene with lighting, textures, and user interaction for navigating the scene and adjusting lighting properties. The main focus is on graphics rendering and interactive visualization using
-            modern graphics techniques.</p>
+          modern graphics techniques.</p>
+          <h3>OpenGL Setup and Initialization:</h3>
+          <p>The project uses OpenGL for rendering, and it starts by setting up OpenGL context using GLFW and GLEW libraries.
+          It configures window dimensions, title, and sets up input callbacks.</p>
+          <h3>Shader Programs:</h3>
+          <p>The project defines vertex and fragment shader source codes, compiles them, and links them into shader programs.
+          These shaders handle rendering operations, including lighting and texture mapping.</p>
+          <h3>Mesh and Texture Loading:</h3>
+          <p>The project defines structures and functions for loading meshes and textures.
+          Textures are loaded from image files using the stb_image library.</p>
+          <h3>Scene and Light Setup:</h3>
+          <p>The project defines structures to hold information about the scene, meshes, lights, and cameras.
+          Light properties (e.g., color, position) are initialized, including a spotlight and a key light.</p>
+          <h3>Rendering and Input Handling:</h3>
+          <p>The project implements functions for rendering the scene and processing user input.
+          It uses camera controls for navigation (WASD, mouse) and allows changing the view mode (perspective/ortho).
+          Lighting properties can be modified interactively via keyboard input (e.g., light position, color).</p>
+          <h3>Main Loop:</h3>
+          <p>The project enters a main loop where it processes input, updates the scene, and renders it.</p>
+          <h3>Light Visualization:</h3>
+          <p>The project includes visualization of the lights using simple geometric shapes (light cubes).</p>
+          <h3>Texture Mapping:</h3>
+          <p>Texture coordinates are used to map textures onto the meshes in the scene.</p>
           <div class="screenshots">
             <p><h4>3D Render/h4></p>
             <img src="/images/.png" alt="Main Menu">
