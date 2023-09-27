@@ -10,7 +10,14 @@ function toggleTheme() {
 }
 
 function expandProject(card) {
-  card.classList.toggle("expanded");
-  const projectDetails = card.querySelector('.project-details');
-  projectDetails.classList.toggle('visible');
+  // Get all project cards
+  var projectCards = document.querySelectorAll('.project-card');
+
+  // Close all project cards
+  projectCards.forEach(function (card) {
+    card.classList.remove('expanded');
+  });
+
+  // Expand the clicked project card
+  card.classList.add('expanded');
 }
