@@ -138,7 +138,19 @@ body {
   transition: transform 0.3s;
 }
 
+.profile-card {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
 .dark-theme .project-card {
+  background-color: #444;
+  color: #fff;
+}
+.dark-theme .profile-card {
   background-color: #444;
   color: #fff;
 }
@@ -147,7 +159,15 @@ body {
   color: #ddd;
 }
 
+.dark-theme .profile-card h3 {
+  color: #ddd;
+}
+
 .project-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-card:hover {
   transform: translateY(-5px);
 }
 
@@ -161,7 +181,16 @@ body {
   margin-top: 10px;
 }
 
+.profile-card .profile-details {
+  display: none;
+  margin-top: 10px;
+}
+
 .project-card.expanded .project-details {
+  display: block;
+}
+
+.profile-card.expanded .profile-details {
   display: block;
 }
 
@@ -191,6 +220,11 @@ h1, h2, h3 {
 }
 
 .project-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-card img {
   max-width: 100%;
   height: auto;
 }
@@ -246,7 +280,16 @@ h1, h2, h3 {
   color: #333;
 }
 
+.light-theme .profile-card {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
 .light-theme .project-card h3 {
+  color: #333;
+}
+
+.light-theme .profile-card h3 {
   color: #333;
 }
 
@@ -290,7 +333,16 @@ h1, h2, h3 {
   color: #1a1a1a;
 }
 
+.blue-theme .profile-card {
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+}
+
 .blue-theme .project-card h3 {
+  color: #1a1a1a;
+}
+
+.blue-theme .profile-card h3 {
   color: #1a1a1a;
 }
 
@@ -331,7 +383,14 @@ h1, h2, h3 {
 
 .green-theme .project-card {
   background-color: #f9f9f9;
-  color let currentThemeIndex = 0;
+}
+
+.green-theme .profile-card {
+  background-color: #f9f9f9;
+}
+
+color let currentThemeIndex = 0;
+
 const themes = ['light-theme', 'blue-theme', 'green-theme', 'dark-theme', 'halloween-theme', 'christmas-theme'];
 
 function toggleTheme() {
@@ -351,12 +410,25 @@ function expandProject(card) {
     card.classList.remove('expanded');
   });
 
-  // Expand the clicked project card
+function expandProfile(card) {
+  // Get all project cards
+  var projectCards = document.querySelectorAll('.project-card');
+
+  // Close all profile cards
+  profileCards.forEach(function (card) {
+    card.classList.remove('expanded');
+  });
+
+  // Expand the clicked profile card
   card.classList.add('expanded');
 }: #1a1a1a;
 }
 
 .green-theme .project-card h3 {
+  color: #1a1a1a;
+}
+
+.green-theme .profile-card h3 {
   color: #1a1a1a;
 }
 
@@ -400,7 +472,16 @@ function expandProject(card) {
   color: #fff;
 }
 
+.halloween-theme .profile-card {
+  background-color: #555;
+  color: #fff;
+}
+
 .halloween-theme .project-card h3 {
+  color: #ff6600;
+}
+
+.halloween-theme .profile-card h3 {
   color: #ff6600;
 }
 
@@ -449,7 +530,16 @@ function expandProject(card) {
   color: #fff;
 }
 
+.christmas-theme .profile-card {
+  background-color: #555;
+  color: #fff;
+}
+
 .christmas-theme .project-card h3 {
+  color: #ff0000;
+}
+
+.christmas-theme .profile-card h3 {
   color: #ff0000;
 }
 
