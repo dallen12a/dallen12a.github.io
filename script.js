@@ -11,10 +11,12 @@ function toggleTheme() {
 }
 
 function expandProject(card) {
-  // Get all project cards
-  var projectCards = document.querySelectorAll('.project-card');
-
   // Close all project cards
+  var projectCards = document.querySelectorAll('.project-card');
   projectCards.forEach(function (card) {
     card.classList.remove('expanded');
   });
+
+  // Toggle the 'expanded' class for the clicked project card
+  card.classList.toggle('expanded');
+}
