@@ -1,3 +1,19 @@
+let currentProfileIndex = 0;  // Add a separate index for profile themes
+const profileThemes = ['light-theme', 'blue-theme', 'green-theme', 'dark-theme', 'halloween-theme', 'christmas-theme'];
+
+function toggleProfileTheme() {
+  const profile = document.querySelector('.profile-card');
+  profile.classList.remove(...profileThemes);
+
+  currentProfileIndex = (currentProfileIndex + 1) % profileThemes.length;
+  profile.classList.add(profileThemes[currentProfileIndex]);
+}
+
+function expandProfile() {
+  const profile = document.querySelector('.profile-card');
+  profile.classList.toggle('expanded');
+}
+
 let currentThemeIndex = 0;
 const themes = ['light-theme', 'blue-theme', 'green-theme', 'dark-theme', 'halloween-theme', 'christmas-theme'];
 
