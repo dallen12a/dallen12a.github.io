@@ -1,5 +1,4 @@
 body {
-  font-family: 'Montserrat', sans-serif;body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
@@ -22,7 +21,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.profile-card {
+.profile {
   width: 40%;
   padding: 20px;
   background-color: #fff;
@@ -31,12 +30,12 @@ body {
 }
 
 @media (orientation: portrait) {
-  .profile-card {
+  .profile {
     width: 60%;
   }
 }
 
-.dark-theme .profile-card {
+.dark-theme .profile {
   background-color: #333;
   color: #fff;
 }
@@ -49,36 +48,36 @@ body {
   color: #4CAF50;
 }
 
-.dark-theme .profile-card h1 {
+.dark-theme .profile h1 {
   color: #ddd;
 }
 
-.profile-card .contact-info a {
+.profile .contact-info a {
   color: #3498db;
   text-decoration: none;
 }
 
-.dark-theme .profile-card .contact-info a {
+.dark-theme .profile .contact-info a {
   color: #4CAF50;
   text-decoration: none;
 }
 
-.blue-theme .profile-card .contact-info a {
+.blue-theme .profile .contact-info a {
   color: #3498db;
   text-decoration: none;
 }
 
-.green-theme .profile-card .contact-info a {
+.green-theme .profile .contact-info a {
   color: #4CAF50;
   text-decoration: none;
 }
 
-.halloween-theme .profile-card .contact-info a {
+.halloween-theme .profile .contact-info a {
   color: #3498db;
   text-decoration: none;
 }
 
-.christmas-theme .profile-card .contact-info a {
+.christmas-theme .profile .contact-info a {
   color: #3498db;
   text-decoration: none;
 }
@@ -87,7 +86,7 @@ body {
   color: #4CAF50;
 }
 
-.profile-card .contact-info a:hover {
+.profile .contact-info a:hover {
   text-decoration: underline;
 }
 
@@ -212,7 +211,7 @@ h1, h2, h3 {
 }
 
 /* Light Theme */
-.light-theme .profile-card {
+.light-theme .profile {
   background-color: #fff;
   color: #333;
 }
@@ -226,7 +225,7 @@ h1, h2, h3 {
   color: #3498db;
 }
 
-.light-theme .profile-card h1 {
+.light-theme .profile h1 {
   color: #000;
 }
 
@@ -256,7 +255,7 @@ h1, h2, h3 {
 }
 
 /* Blue Theme */
-.blue-theme .profile-card {
+.blue-theme .profile {
   background-color: #c2d5e8;
   color: #1a1a1a;
 }
@@ -270,12 +269,175 @@ h1, h2, h3 {
   color: #3498db;
 }
 
-.blue-theme .profile-card h1 {
+.blue-theme .profile h1 {
   color: #1a1a1a;
 }
 
 .blue-theme .contact-info a {
   color: #3498db;
+}
+
+.blue-theme .profile-picture {
+  border: 3px solid #3498db;
+}
+
+.blue-theme .projects h2 {
+  color: #1a1a1a;
+}
+
+.blue-theme .project-card {
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+}
+
+.blue-theme .project-card h3 {
+  color: #1a1a1a;
+}
+
+.blue-theme .project-link {
+  color: #3498db;
+}
+
+/* Green Theme */
+.green-theme .profile {
+  background-color: #d7ebc3;
+  color: #1a1a1a;
+}
+
+.green-theme .projects {
+  background-color: #eaf4e0;
+  color: #1a1a1a;
+}
+
+.green-theme .github-link {
+  color: #4CAF50;
+}
+
+.green-theme .profile h1 {
+  color: #1a1a1a;
+}
+
+.green-theme .contact-info a {
+  color: #4CAF50;
+}
+
+.green-theme .profile-picture {
+  border: 3px solid #4CAF50;
+}
+
+.green-theme .projects h2 {
+  color: #1a1a1a;
+}
+
+.green-theme .project-card {
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+}
+
+.green-theme .project-card h3 {
+  color: #1a1a1a;
+}
+
+.green-theme .project-link {
+  color: #4CAF50;
+}
+
+.halloween-theme body {
+  background-color: #222;
+  color: #ff6600; /* Orange */
+}
+
+.halloween-theme .profile {
+  background-color: #333;
+  color: #fff;
+}
+
+.halloween-theme .projects {
+  background-color: #444;
+  color: #fff;
+}
+
+.halloween-theme .github-link {
+  color: #3498db; /* Orange in dark mode */
+}
+
+.halloween-theme .profile h1 {
+  color: #ddd;
+}
+
+.halloween-theme .contact-info a {
+  color: #3498db;
+}
+
+.halloween-theme .profile-picture {
+  border: 3px solid #ff6600; /* Orange */
+}
+
+.halloween-theme .project-card {
+  background-color: #555;
+  color: #fff;
+}
+
+.halloween-theme .project-card h3 {
+  color: #ff6600;
+}
+
+.halloween-theme .project-link {
+  color: #4CAF50;
+}
+
+.halloween-theme .languages .bubble {
+  background-color: #ff6600; /* Orange */
+  color: #000;
+}
+
+.christmas-theme body {
+  background-color: #222;
+  color: #ff0000; /* Red */
+}
+
+.christmas-theme .profile {
+  background-color: #333;
+  color: #fff;
+}
+
+.christmas-theme .projects {
+  background-color: #444;
+  color: #fff;
+}
+
+.christmas-theme .github-link {
+  color: #3498db; /* Red in dark mode */
+}
+
+.christmas-theme .profile h1 {
+  color: #ddd;
+}
+
+.christmas-theme .contact-info a {
+  color: #3498db;
+}
+
+.christmas-theme .profile-picture {
+  border: 3px solid #ff0000; /* Red */
+}
+
+.christmas-theme .project-card {
+  background-color: #555;
+  color: #fff;
+}
+
+.christmas-theme .project-card h3 {
+  color: #ff0000;
+}
+
+.christmas-theme .project-link {
+  color: #4CAF50;
+}
+
+.christmas-theme .languages .bubble {
+  background-color: #ff0000; /* Red */
+  color: #fff;
 }
 
 .light-theme .languages .bubble {
