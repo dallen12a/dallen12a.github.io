@@ -30,3 +30,4 @@ function expandProfile(card) {
 
   // Expand the clicked profile card
   card.classList.add('expanded');
+  }
