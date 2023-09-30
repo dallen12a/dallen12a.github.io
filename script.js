@@ -18,16 +18,3 @@ function expandProject(card) {
   projectCards.forEach(function (card) {
     card.classList.remove('expanded');
   });
-
-function expandProfile(card) {
-  // Get all project cards
-  var projectCards = document.querySelectorAll('.project-card');
-
-  // Close all profile cards
-  profileCards.forEach(function (card) {
-    card.classList.remove('expanded');
-  });
-
-  // Expand the clicked profile card
-  card.classList.add('expanded');
-  }
