@@ -46,4 +46,3 @@ function expandProfileCard(card) {
   // Update profile header based on the theme
   const profileHeader = document.querySelector('.profile h2');
   profileHeader.textContent = `Profile - ${themes[currentThemeIndex]}`;
-}
