@@ -13,7 +13,6 @@ function toggleTheme() {
 function toggleCard(card) {
   const cardContent = card.querySelector('.card-content');
   cardContent.style.display = (cardContent.style.display === 'none' || cardContent.style.display === '') ? 'block' : 'none';
-}
 
   // Hide the "Expand for more" text after expanding
   const expandText = card.querySelector('.expand-text');
@@ -25,8 +24,8 @@ function toggleCard(card) {
 function expandProject(card) {
   // Close all project cards
   const projectCards = document.querySelectorAll('.project-card');
-  projectCards.forEach(function (card) {
-    card.classList.remove('expanded');
+  projectCards.forEach(function (projectCard) {
+    projectCard.classList.remove('expanded');
   });
 
   // Toggle the 'expanded' class for the clicked project card
