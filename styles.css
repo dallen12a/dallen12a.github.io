@@ -48,7 +48,7 @@ body {
   color: #4CAF50;
 }
 
-.dark-theme .profile h1 {
+.dark-theme .profile h1, h2{
   color: #ddd;
 }
 
@@ -225,11 +225,11 @@ h1, h2, h3 {
   color: #3498db;
 }
 
-.light-theme .profile h1 {
+.light-theme .profile h1, h2{
   color: #000;
 }
 
-.light-theme .contact-info a {
+.light-theme .profile .contact-info a {
   color: #3498db;
 }
 
@@ -269,11 +269,11 @@ h1, h2, h3 {
   color: #3498db;
 }
 
-.blue-theme .profile h1 {
+.blue-theme .profile h1, h2{
   color: #1a1a1a;
 }
 
-.blue-theme .contact-info a {
+.blue-theme .profile .contact-info a {
   color: #3498db;
 }
 
@@ -313,11 +313,11 @@ h1, h2, h3 {
   color: #4CAF50;
 }
 
-.green-theme .profile h1 {
+.green-theme .profile h1, h2 {
   color: #1a1a1a;
 }
 
-.green-theme .contact-info a {
+.green-theme .profile .contact-info a {
   color: #4CAF50;
 }
 
@@ -361,11 +361,11 @@ h1, h2, h3 {
   color: #3498db; /* Orange in dark mode */
 }
 
-.halloween-theme .profile h1 {
+.halloween-theme .profile h1, h2 {
   color: #ddd;
 }
 
-.halloween-theme .contact-info a {
+.halloween-theme .profile .contact-info a {
   color: #3498db;
 }
 
@@ -410,11 +410,11 @@ h1, h2, h3 {
   color: #3498db; /* Red in dark mode */
 }
 
-.christmas-theme .profile h1 {
+.christmas-theme .profile h1, h2 {
   color: #ddd;
 }
 
-.christmas-theme .contact-info a {
+.christmas-theme .profile .contact-info a {
   color: #3498db;
 }
 
