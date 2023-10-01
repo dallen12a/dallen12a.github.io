@@ -10,9 +10,14 @@ function toggleTheme() {
   body.classList.add(themes[currentThemeIndex]);
 }
 
+function expandProfileCard(card) {
+  const cardContent = card.querySelector('.card-content');
+  cardContent.style.display = (cardContent.style.display === 'none' || cardContent.style.display === '') ? 'block' : 'none';
+}
+
 function expandProject(card) {
   // Close all project cards
-  var projectCards = document.querySelectorAll('.project-card');
+  const projectCards = document.querySelectorAll('.project-card');
   projectCards.forEach(function (card) {
     card.classList.remove('expanded');
   });
