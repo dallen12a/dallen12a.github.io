@@ -16,6 +16,10 @@ body {
   color: #fff;
 }
 
+.dark-theme .profile .profile-card h2 {
+  color: #FFF
+}
+
 .container {
   display: flex;
   justify-content: space-between;
