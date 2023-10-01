@@ -10,6 +10,10 @@ body {
 .profile .profile-card h2 {
   color: #000
 }
+
+.project .project-card h2 {
+  color: #000
+}
   
 .dark-theme body {
   background-color: #222;
@@ -397,6 +401,10 @@ h3 {
   color: #3498db;
 }
 
+.halloween-theme .profile .profile-card h2 {
+  color: #FFF
+}
+
 .halloween-theme .profile-picture {
   border: 3px solid #ff6600; /* Orange */
 }
@@ -444,6 +452,10 @@ h3 {
 
 .christmas-theme .profile .contact-info a {
   color: #3498db;
+}
+
+.christmas-theme .profile .profile-card h2 {
+  color: #FFF
 }
 
 .christmas-theme .profile-picture {
