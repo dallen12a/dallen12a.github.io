@@ -31,8 +31,6 @@ function toggleCard(card) {
 }
 
 function expandProject(card) {
-  const isExpanded = card.classList.contains('expanded');
-  
   // Close all project cards
   const projectCards = document.querySelectorAll('.project-card');
   projectCards.forEach(function (projectCard) {
@@ -40,13 +38,10 @@ function expandProject(card) {
   });
 
   // Toggle the 'expanded' class for the clicked project card
-  if (!isExpanded) {
-    card.classList.add('expanded');
-  }
+  card.classList.toggle('expanded');
 }
 
 function expandProfileCard(card) {
   // Toggle the 'expanded' class for the clicked profile card
   card.classList.toggle('expanded');
-}
 }
