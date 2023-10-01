@@ -8,10 +8,6 @@ function toggleTheme() {
 
   currentThemeIndex = (currentThemeIndex + 1) % themes.length;
   body.classList.add(themes[currentThemeIndex]);
-
-  // Update profile header based on the theme
-  const profileHeader = document.querySelector('.profile h2');
-  profileHeader.textContent = themes[currentThemeIndex];  // Remove "Profile -"
 }
 
 function toggleCard(card) {
