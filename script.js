@@ -10,6 +10,9 @@ function toggleTheme() {
   body.classList.add(themes[currentThemeIndex]);
 }
 
+// Set the initial theme to light-theme
+document.body.classList.add(themes[currentThemeIndex]);
+
 function toggleCard(card) {
   const cardContent = card.querySelector('.card-content');
   const expandText = card.querySelector('.expand-text');
