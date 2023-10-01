@@ -12,12 +12,18 @@ function toggleTheme() {
 
 function toggleCard(card) {
   const cardContent = card.querySelector('.card-content');
-  cardContent.style.display = (cardContent.style.display === 'none' || cardContent.style.display === '') ? 'block' : 'none';
-
-  // Hide the "Expand for more" text after expanding
   const expandText = card.querySelector('.expand-text');
-  if (expandText) {
-    expandText.style.display = 'none';
+
+  if (cardContent.style.display === 'none' || cardContent.style.display === '') {
+    cardContent.style.display = 'block';
+    if (expandText) {
+      expandText.style.display = 'none';
+    }
+  } else {
+    cardContent.style.display = 'none';
+    if (expandText) {
+      expandText.style.display = 'block';  // Revert to 'block' when closing
+    }
   }
 }
 
