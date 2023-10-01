@@ -225,7 +225,11 @@ h1, h2, h3 {
   color: #3498db;
 }
 
-.light-theme .profile h1, h2{
+.light-theme .profile h1 {
+  color: #000;
+}
+
+.light-theme .profile h2 {
   color: #000;
 }
 
@@ -317,7 +321,11 @@ h1, h2, h3 {
   color: #4CAF50;
 }
 
-.green-theme .profile h1, h2 {
+.green-theme .profile h1 {
+  color: #1a1a1a;
+}
+
+.green-theme .profile h2 {
   color: #1a1a1a;
 }
 
