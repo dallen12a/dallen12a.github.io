@@ -10,7 +10,7 @@ function toggleTheme() {
   body.classList.add(themes[currentThemeIndex]);
 }
 
-function expandProfileCard(card) {
+function toggleCard(card) {
   const cardContent = card.querySelector('.card-content');
   cardContent.style.display = (cardContent.style.display === 'none' || cardContent.style.display === '') ? 'block' : 'none';
 }
@@ -23,5 +23,10 @@ function expandProject(card) {
   });
 
   // Toggle the 'expanded' class for the clicked project card
+  card.classList.toggle('expanded');
+}
+
+function expandProfileCard(card) {
+  // Toggle the 'expanded' class for the clicked profile card
   card.classList.toggle('expanded');
 }
