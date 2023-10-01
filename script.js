@@ -42,3 +42,8 @@ function expandProfileCard(card) {
   // Toggle the 'expanded' class for the clicked profile card
   card.classList.toggle('expanded');
 }
+
+  // Update profile header based on the theme
+  const profileHeader = document.querySelector('.profile h2');
+  profileHeader.textContent = `Profile - ${themes[currentThemeIndex]}`;
+}
