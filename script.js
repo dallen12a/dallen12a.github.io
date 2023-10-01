@@ -22,7 +22,7 @@ function toggleCard(card) {
   } else {
     cardContent.style.display = 'none';
     if (expandText) {
-      expandText.style.display = 'block';  // Revert to 'block' when closing
+      expandText.style.display = 'block';
     }
   }
 }
