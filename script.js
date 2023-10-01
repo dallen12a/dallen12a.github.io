@@ -15,6 +15,13 @@ function toggleCard(card) {
   cardContent.style.display = (cardContent.style.display === 'none' || cardContent.style.display === '') ? 'block' : 'none';
 }
 
+  // Hide the "Expand for more" text after expanding
+  const expandText = card.querySelector('.expand-text');
+  if (expandText) {
+    expandText.style.display = 'none';
+  }
+}
+
 function expandProject(card) {
   // Close all project cards
   const projectCards = document.querySelectorAll('.project-card');
