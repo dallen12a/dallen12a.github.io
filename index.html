@@ -272,9 +272,50 @@
             <span class="bubble">Java</span>
             <span class="bubble">Python</span>
           </div>
-          <p>
-            The base level program was updated to fix looping issues and input validation. This program was then converted into Java and Python to utilize the most versatile languages available.
-          </p>
+          <p>The artifact that will be used for the software engineering/design proficiency comes from the Southern New Hampshire University course CS300: Data Structures and Algorithms: Analysis and Design. The original assignment crafted a course planner program that allowed a user to upload course data from a CSV file. This C++ program also displayed a list of available courses and applicable prerequisites. For the enhancement process, the original program will be converted into two additional programming languages: JavaScript and Python.</p>
+
+          <p>The process of converting C++ code into JavaScript and Python aligns with several important course outcomes: employ strategies for building collaborative environments, design and develop professional quality communication, design and evaluate computing solutions, demonstrate ability to use well-founded and innovative techniques, and develop a security mindset.</p>
+          
+          <p>The conversion process involves using more than one programming language (C++, JavaScript, and Python) to run the same program. This demonstrates the ability to work collaboratively in a diverse technological environment, where team members may have expertise in different languages. By successfully translating the code into multiple languages, developers ensure that a broader audience can support and contribute to the project.</p>
+          
+          <p>Thorough commenting on the code in both JavaScript and Python versions serves as an example of professional-quality communication. Comments explain the functionality and purpose of various code segments, making it easier for team members and other stakeholders to understand the codebase. This aligns with the course outcome of delivering coherent, technically sound communications adapted to specific audiences.</p>
+          
+          <p>The conversion process goes beyond mere translation; it involves evaluating and redesigning solutions to fit the target languages (JavaScript and Python). Developers need to assess the algorithmic principles, data structures, and design choices to ensure that the code functions correctly in each language. This process demonstrates the ability to design and evaluate computing solutions that solve a given problem, aligning with the course outcome related to algorithmic principles and design choices.</p>
+          
+          <p>Translating code from C++ to JavaScript and Python requires a solid understanding of the principles and techniques specific to each language. Developers must adapt well-founded techniques while also innovatively addressing language-specific challenges. For example, handling asynchronous operations in JavaScript or managing dynamic typing in Python may require innovative solutions. This demonstrates the ability to use both established and innovative techniques, which aligns with the course outcome of applying well-founded and innovative techniques in computing practices.</p>
+          
+          <p>Throughout the conversion process, developers should maintain a security mindset. While translating code, they need to consider potential vulnerabilities, such as input validation and secure data handling, and ensure that security measures are applied consistently in both JavaScript and Python versions. This emphasizes the importance of anticipating adversarial exploits, mitigating design flaws, and ensuring the security of data and resources, aligning with the course outcome related to a security mindset.</p>
+          
+          <p>In conclusion, the conversion process from C++ to JavaScript and Python not only showcases technical proficiency but also demonstrates the ability to collaborate effectively in a multilingual environment, communicate professionally through code comments, design and evaluate computing solutions in diverse languages, apply well-founded and innovative techniques, and maintain a security-conscious approach. These aspects align with the specified course outcomes in the field of computer science and software engineering.</p>
+          
+          <p>Pseudocode for Enhancement</p>
+          <p>1. Start</p>
+          <p>2. Define variables and data structures (is_found, option, p).</p>
+          <p>3. Define the Course class structure with id, title, and pre.</p>
+          <p>4. Create a menu() function:
+             - Display the main menu options.
+             - Read user input into 'option' variable.</p>
+          <p>5. Create an options() function:</p>
+          <p>   6.1. Initialize an empty 'courses' array.</p>
+          <p>   6.2. Initialize other necessary variables.</p>
+          <p>   6.3. Create a loop while 'valid' is true:</p>
+          <p>       6.3.1. Call menu() to display the menu and get the user's choice.</p>
+          <p>       6.3.2. Use a switch statement for 'option':</p>
+          <p>           - Case 1:</p>
+          <p>             6.3.2.1. Load and parse 'courselist.csv' into 'courses'.</p>
+          <p>           - Case 2:</p>
+          <p>             6.3.2.2. Print the id and title of all courses in 'courses'.</p>
+          <p>           - Case 3:</p>
+          <p>             6.3.2.3. Prompt the user for a course ID, convert to uppercase.</p>
+          <p>             6.3.2.4. Search 'courses' for the course and display its info.</p>
+          <p>           - Case 9:</p>
+          <p>             6.3.2.5. Exit the program.</p>
+          <p>           - Default:</p>
+          <p>             6.3.2.6. Display an invalid choice message.</p>
+          <p>       6.3.3. End the loop.</p>
+          <p>7. Call the options() function.</p>
+          <p>8. End.</p>
+
           <div class="screenshots">
             <p><h4>Main Menu</h4></p>
             <img src="/images/CoursePlannerSS1.png" alt="Main Menu">
