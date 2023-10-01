@@ -269,7 +269,11 @@ h1, h2, h3 {
   color: #3498db;
 }
 
-.blue-theme .profile h1, h2{
+.blue-theme .profile h1 {
+  color: #1a1a1a;
+}
+
+.blue-theme .profile h2{
   color: #1a1a1a;
 }
 
