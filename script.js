@@ -8,6 +8,10 @@ function toggleTheme() {
 
   currentThemeIndex = (currentThemeIndex + 1) % themes.length;
   body.classList.add(themes[currentThemeIndex]);
+
+  // Update profile header based on the theme
+  const profileHeader = document.querySelector('.profile h2');  // Changed h1 to h2
+  profileHeader.textContent = `Profile - ${themes[currentThemeIndex]}`;
 }
 
 function toggleCard(card) {
@@ -42,7 +46,3 @@ function expandProfileCard(card) {
   // Toggle the 'expanded' class for the clicked profile card
   card.classList.toggle('expanded');
 }
-
-  // Update profile header based on the theme
-  const profileHeader = document.querySelector('.profile h2');
-  profileHeader.textContent = `Profile - ${themes[currentThemeIndex]}`;
