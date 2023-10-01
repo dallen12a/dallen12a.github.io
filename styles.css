@@ -173,7 +173,15 @@ body {
   text-decoration: underline;
 }
 
-h1, h2, h3 {
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #333;
+}
+
+h3 {
   color: #333;
 }
 
