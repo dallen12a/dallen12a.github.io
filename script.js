@@ -66,9 +66,8 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
-  const videoContainer = document.getElementById('video-container');
-  videoContainer.addEventListener('click', () => {
+  document.addEventListener('click', () => {
     player.playVideo();
-    player.setSize(videoContainer.offsetWidth, videoContainer.offsetHeight);
+    player.setSize(window.innerWidth, window.innerHeight);
   });
 }
