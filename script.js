@@ -45,3 +45,16 @@ function expandProfileCard(card) {
   // Toggle the 'expanded' class for the clicked profile card
   card.classList.toggle('expanded');
 }
+
+const video = document.getElementById('video');
+video.addEventListener('click', () => {
+  if (video.requestFullscreen) {
+    video.requestFullscreen();
+  } else if (video.webkitRequestFullscreen) {
+    video.webkitRequestFullscreen();
+  } else if (video.mozRequestFullScreen) {
+    video.mozRequestFullScreen();
+  } else if (video.msRequestFullscreen) {
+    video.msRequestFullscreen();
+  }
+});
