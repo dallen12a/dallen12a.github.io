@@ -66,14 +66,9 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
-  document.addEventListener('click', () => {
+  const videoContainer = document.getElementById('video-container');
+  videoContainer.addEventListener('click', () => {
     player.playVideo();
     player.setSize(window.innerWidth, window.innerHeight);
-
-    // Request full screen
-    const playerElement = document.getElementById('video');
-    playerElement.requestFullscreen().catch(err => {
-      alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
-    });
   });
 }
