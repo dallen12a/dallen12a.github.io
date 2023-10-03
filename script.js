@@ -70,10 +70,24 @@ function onPlayerReady(event) {
   videoContainer.addEventListener('click', () => {
     player.playVideo();
 
-    // Use screen dimensions to set the player size
-    const screenWidth = screen.width;
-    const screenHeight = screen.height;
-    player.setSize(screenWidth, screenHeight);
+    // Get the video's aspect ratio (width / height)
+    const aspectRatio = player.getVideoWidth() / player.getVideoHeight();
+
+    // Calculate dimensions to maintain the aspect ratio and fit the screen
+    let screenWidth = window.innerWidth;
+    let screenHeight = window.innerHeight;
+    
+    if (screenWidth / screenHeight > aspectRatio) {
+      // If the screen is wider than the video's aspect ratio, adjust height
+      screenHeight = screenWidth / aspectRatio;
+    } else {
+      // If the screen is taller than the video's aspect ratio, adjust width
+      screenWidth = screenHeight * aspectRatio;
+    }
+
+    // Set the container size to match the video dimensions
+    videoContainer.style.width = screenWidth + 'px';
+    videoContainer.style.height = screenHeight + 'px';
 
     // Request full screen
     videoContainer.requestFullscreen().catch(err => {
