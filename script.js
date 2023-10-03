@@ -46,15 +46,20 @@ function expandProfileCard(card) {
   card.classList.toggle('expanded');
 }
 
-const video = document.getElementById('video');
-video.addEventListener('click', () => {
-  if (video.requestFullscreen) {
-    video.requestFullscreen();
-  } else if (video.webkitRequestFullscreen) {
-    video.webkitRequestFullscreen();
-  } else if (video.mozRequestFullScreen) {
-    video.mozRequestFullScreen();
-  } else if (video.msRequestFullscreen) {
-    video.msRequestFullscreen();
-  }
-});
+let player;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('video', {
+    events: {
+      'onReady': onPlayerReady,
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  const video = document.getElementById('video');
+  video.addEventListener('click', () => {
+    player.playVideo();
+    player.setSize(window.innerWidth, window.innerHeight);
+  });
+}
