@@ -69,6 +69,6 @@ function onPlayerReady(event) {
   const videoContainer = document.getElementById('video-container');
   videoContainer.addEventListener('click', () => {
     player.playVideo();
-    player.setSize(window.innerWidth, window.innerHeight);
+    player.setSize(videoContainer.offsetWidth, videoContainer.offsetHeight);
   });
 }
