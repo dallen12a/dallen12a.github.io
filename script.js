@@ -69,6 +69,15 @@ function onPlayerReady(event) {
   const videoContainer = document.getElementById('video-container');
   videoContainer.addEventListener('click', () => {
     player.playVideo();
-    player.setSize(window.innerWidth, window.innerHeight);
+
+    // Use screen dimensions to set the player size
+    const screenWidth = screen.width;
+    const screenHeight = screen.height;
+    player.setSize(screenWidth, screenHeight);
+
+    // Request full screen
+    videoContainer.requestFullscreen().catch(err => {
+      alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+    });
   });
 }
