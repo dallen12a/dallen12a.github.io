@@ -49,7 +49,7 @@ function expandProfileCard(card) {
 let player;
 
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player('video-container', {
+  player = new YT.Player('video', {
     height: '100%',
     width: '100%',
     videoId: '86_HWIMd__k', // Replace with your video ID
