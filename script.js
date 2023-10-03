@@ -49,16 +49,25 @@ function expandProfileCard(card) {
 let player;
 
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player('video', {
+  player = new YT.Player('video-container', {
+    height: '100%',
+    width: '100%',
+    videoId: '86_HWIMd__k', // Replace with your video ID
+    playerVars: {
+      'autoplay': 0,
+      'controls': 1,
+      'rel': 0,
+      'showinfo': 0
+    },
     events: {
-      'onReady': onPlayerReady,
+      'onReady': onPlayerReady
     }
   });
 }
 
 function onPlayerReady(event) {
-  const video = document.getElementById('video');
-  video.addEventListener('click', () => {
+  const videoContainer = document.getElementById('video-container');
+  videoContainer.addEventListener('click', () => {
     player.playVideo();
     player.setSize(window.innerWidth, window.innerHeight);
   });
