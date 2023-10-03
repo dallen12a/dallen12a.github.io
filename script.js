@@ -52,7 +52,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('video-container', {
     height: '100%',
     width: '100%',
-    videoId: 'https://youtu.be/86_HWIMd__k', // Replace with your video ID
+    videoId: '86_HWIMd__k', // Replace with your video ID
     playerVars: {
       'autoplay': 0,
       'controls': 1,
