@@ -67,31 +67,21 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady(event) {
   const videoContainer = document.getElementById('video-container');
+
+  // Check if the device is a mobile and in portrait mode
+  function isMobileAndPortrait() {
+    return window.innerWidth < window.innerHeight && window.innerWidth <= 768;
+  }
+
   videoContainer.addEventListener('click', () => {
-    player.playVideo();
-
-    // Get the video's aspect ratio (width / height)
-    const aspectRatio = player.getVideoWidth() / player.getVideoHeight();
-
-    // Calculate dimensions to maintain the aspect ratio and fit the screen
-    let screenWidth = window.innerWidth;
-    let screenHeight = window.innerHeight;
-    
-    if (screenWidth / screenHeight > aspectRatio) {
-      // If the screen is wider than the video's aspect ratio, adjust height
-      screenHeight = screenWidth / aspectRatio;
+    // Check if it's a mobile device in portrait mode
+    if (isMobileAndPortrait()) {
+      // Prompt the user to switch to landscape
+      alert('Please switch to landscape mode to watch the video.');
     } else {
-      // If the screen is taller than the video's aspect ratio, adjust width
-      screenWidth = screenHeight * aspectRatio;
+      // Play the video and set the size to full screen
+      player.playVideo();
+      player.setSize(window.innerWidth, window.innerHeight);
     }
-
-    // Set the container size to match the video dimensions
-    videoContainer.style.width = screenWidth + 'px';
-    videoContainer.style.height = screenHeight + 'px';
-
-    // Request full screen
-    videoContainer.requestFullscreen().catch(err => {
-      alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
-    });
   });
 }
